@@ -1,1 +1,3 @@
 rootProject.name = 'SpringBootStarter'
+
+// Tổ hợp phía để xóa import không sử dụng trong vs code là shift + alt + O
