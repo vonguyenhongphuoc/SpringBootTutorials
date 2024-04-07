@@ -610,3 +610,18 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2024-04-07 23:03:16 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet532 - Initializing Servlet 'dispatcherServlet'
 2024-04-07 23:03:16 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet554 - Completed initialization in 2 ms
 2024-04-07 23:03:17 [http-nio-8080-exec-9] INFO  o.s.api.AbstractOpenApiResource390 - Init duration for springdoc-openapi is: 320 ms
+2024-04-07 23:05:54 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 22700 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 23:05:54 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 23:05:54 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 23:05:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 23:05:56 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 23:05:56 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 23:05:56 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 23:05:56 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1991 ms
+2024-04-07 23:05:57 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@437c4b25, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ec6fede, org.springframework.security.web.context.SecurityContextHolderFilter@7aea704c, org.springframework.security.web.header.HeaderWriterFilter@cc9ef8d, org.springframework.web.filter.CorsFilter@580902cd, org.springframework.security.web.authentication.logout.LogoutFilter@525647f3, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@527a8665, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@32507479, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@632383b9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3757e8e2, org.springframework.security.web.session.SessionManagementFilter@5db948c9, org.springframework.security.web.access.ExceptionTranslationFilter@1e30db85, org.springframework.security.web.access.intercept.AuthorizationFilter@6af609ea]
+2024-04-07 23:05:57 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer241 - Tomcat started on port 8080 (http) with context path ''
+2024-04-07 23:05:57 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication56 - Started SpringRestDemoWithGradleApplication in 3.899 seconds (process running for 4.341)
+2024-04-07 23:05:57 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-07 23:05:57 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet532 - Initializing Servlet 'dispatcherServlet'
+2024-04-07 23:05:57 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet554 - Completed initialization in 1 ms
+2024-04-07 23:05:58 [http-nio-8080-exec-9] INFO  o.s.api.AbstractOpenApiResource390 - Init duration for springdoc-openapi is: 405 ms
