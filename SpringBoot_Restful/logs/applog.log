@@ -26,3 +26,587 @@ Action:
 
 Consider defining a bean of type 'com.devhp.SpringRestDemoWithGradle.config.RsaKeyProperties' in your configuration.
 
+2024-04-07 01:53:47 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 4040 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 01:53:47 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 01:53:47 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 01:53:49 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 01:53:49 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 01:53:49 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 01:53:49 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 01:53:49 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1522 ms
+2024-04-07 01:53:49 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext632 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main\com\devhp\SpringRestDemoWithGradle\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'tokenService' defined in file [D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main\com\devhp\SpringRestDemoWithGradle\service\TokenService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'securityConfig' defined in file [D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main\com\devhp\SpringRestDemoWithGradle\secutiry\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.devhp.SpringRestDemoWithGradle.config.RsaKeyProperties' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-04-07 01:53:49 [main] INFO  o.a.catalina.core.StandardService173 - Stopping service [Tomcat]
+2024-04-07 01:53:49 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-07 01:53:49 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.devhp.SpringRestDemoWithGradle.secutiry.SecurityConfig required a bean of type 'com.devhp.SpringRestDemoWithGradle.config.RsaKeyProperties' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.devhp.SpringRestDemoWithGradle.config.RsaKeyProperties' in your configuration.
+
+2024-04-07 01:54:35 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 10272 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 01:54:35 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 01:54:35 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 01:54:36 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 01:54:36 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 01:54:36 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 01:54:36 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 01:54:36 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1453 ms
+2024-04-07 01:54:36 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext632 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main\com\devhp\SpringRestDemoWithGradle\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'tokenService' defined in file [D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main\com\devhp\SpringRestDemoWithGradle\service\TokenService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'securityConfig' defined in file [D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main\com\devhp\SpringRestDemoWithGradle\secutiry\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.devhp.SpringRestDemoWithGradle.config.RsaKeyProperties' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-04-07 01:54:36 [main] INFO  o.a.catalina.core.StandardService173 - Stopping service [Tomcat]
+2024-04-07 01:54:36 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-07 01:54:36 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.devhp.SpringRestDemoWithGradle.secutiry.SecurityConfig required a bean of type 'com.devhp.SpringRestDemoWithGradle.config.RsaKeyProperties' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.devhp.SpringRestDemoWithGradle.config.RsaKeyProperties' in your configuration.
+
+2024-04-07 01:55:56 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 22604 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 01:55:56 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 01:55:56 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 01:55:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 01:55:58 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 01:55:58 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 01:55:58 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 01:55:58 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1422 ms
+2024-04-07 01:55:58 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext632 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main\com\devhp\SpringRestDemoWithGradle\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'tokenService' defined in file [D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main\com\devhp\SpringRestDemoWithGradle\service\TokenService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.springframework.security.oauth2.jwt.JwtEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-04-07 01:55:58 [main] INFO  o.a.catalina.core.StandardService173 - Stopping service [Tomcat]
+2024-04-07 01:55:58 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-07 01:55:58 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.devhp.SpringRestDemoWithGradle.service.TokenService required a bean of type 'org.springframework.security.oauth2.jwt.JwtEncoder' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.oauth2.jwt.JwtEncoder' in your configuration.
+
+2024-04-07 01:56:39 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 23024 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 01:56:39 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 01:56:39 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 01:56:40 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 01:56:40 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 01:56:40 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 01:56:40 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 01:56:40 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1537 ms
+2024-04-07 01:56:40 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext632 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main\com\devhp\SpringRestDemoWithGradle\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'tokenService' defined in file [D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main\com\devhp\SpringRestDemoWithGradle\service\TokenService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'securityConfig' defined in file [D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main\com\devhp\SpringRestDemoWithGradle\secutiry\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.devhp.SpringRestDemoWithGradle.config.RsaKeyProperties' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-04-07 01:56:40 [main] INFO  o.a.catalina.core.StandardService173 - Stopping service [Tomcat]
+2024-04-07 01:56:40 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-07 01:56:40 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.devhp.SpringRestDemoWithGradle.secutiry.SecurityConfig required a bean of type 'com.devhp.SpringRestDemoWithGradle.config.RsaKeyProperties' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.devhp.SpringRestDemoWithGradle.config.RsaKeyProperties' in your configuration.
+
+2024-04-07 02:07:49 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 17368 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 02:07:49 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 02:07:49 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 02:07:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 02:07:51 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 02:07:51 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 02:07:51 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 02:07:51 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1645 ms
+2024-04-07 02:07:51 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext632 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main\com\devhp\SpringRestDemoWithGradle\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'tokenService' defined in file [D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main\com\devhp\SpringRestDemoWithGradle\service\TokenService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'securityConfig' defined in file [D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main\com\devhp\SpringRestDemoWithGradle\secutiry\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.devhp.SpringRestDemoWithGradle.config.RsaKeyProperties' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-04-07 02:07:51 [main] INFO  o.a.catalina.core.StandardService173 - Stopping service [Tomcat]
+2024-04-07 02:07:51 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-07 02:07:51 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.devhp.SpringRestDemoWithGradle.secutiry.SecurityConfig required a bean of type 'com.devhp.SpringRestDemoWithGradle.config.RsaKeyProperties' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.devhp.SpringRestDemoWithGradle.config.RsaKeyProperties' in your configuration.
+
+2024-04-07 02:09:55 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 22872 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 02:09:55 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 02:09:55 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 02:09:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 02:09:56 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 02:09:56 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 02:09:56 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 02:09:56 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1517 ms
+2024-04-07 02:09:56 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext632 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main\com\devhp\SpringRestDemoWithGradle\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'tokenService' defined in file [D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main\com\devhp\SpringRestDemoWithGradle\service\TokenService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'securityConfig' defined in file [D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main\com\devhp\SpringRestDemoWithGradle\secutiry\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.devhp.SpringRestDemoWithGradle.config.RsaKeyProperties' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-04-07 02:09:56 [main] INFO  o.a.catalina.core.StandardService173 - Stopping service [Tomcat]
+2024-04-07 02:09:56 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-07 02:09:56 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.devhp.SpringRestDemoWithGradle.secutiry.SecurityConfig required a bean of type 'com.devhp.SpringRestDemoWithGradle.config.RsaKeyProperties' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.devhp.SpringRestDemoWithGradle.config.RsaKeyProperties' in your configuration.
+
+2024-04-07 02:13:11 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 22484 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 02:13:11 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 02:13:11 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 02:13:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 02:13:13 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 02:13:13 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 02:13:13 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 02:13:13 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1501 ms
+2024-04-07 02:13:13 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext632 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main\com\devhp\SpringRestDemoWithGradle\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'tokenService' defined in file [D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main\com\devhp\SpringRestDemoWithGradle\service\TokenService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'securityConfig' defined in file [D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main\com\devhp\SpringRestDemoWithGradle\secutiry\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.devhp.SpringRestDemoWithGradle.config.RsaKeyProperties' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-04-07 02:13:13 [main] INFO  o.a.catalina.core.StandardService173 - Stopping service [Tomcat]
+2024-04-07 02:13:13 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-07 02:13:13 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.devhp.SpringRestDemoWithGradle.secutiry.SecurityConfig required a bean of type 'com.devhp.SpringRestDemoWithGradle.config.RsaKeyProperties' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.devhp.SpringRestDemoWithGradle.config.RsaKeyProperties' in your configuration.
+
+2024-04-07 02:15:49 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 22868 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 02:15:49 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 02:15:49 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 02:15:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 02:15:50 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 02:15:50 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 02:15:50 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 02:15:50 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1482 ms
+2024-04-07 02:15:50 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext632 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main\com\devhp\SpringRestDemoWithGradle\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'tokenService' defined in file [D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main\com\devhp\SpringRestDemoWithGradle\service\TokenService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'securityConfig' defined in file [D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main\com\devhp\SpringRestDemoWithGradle\secutiry\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.devhp.SpringRestDemoWithGradle.config.RsaKeyProperties' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-04-07 02:15:50 [main] INFO  o.a.catalina.core.StandardService173 - Stopping service [Tomcat]
+2024-04-07 02:15:50 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-07 02:15:50 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.devhp.SpringRestDemoWithGradle.secutiry.SecurityConfig required a bean of type 'com.devhp.SpringRestDemoWithGradle.config.RsaKeyProperties' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.devhp.SpringRestDemoWithGradle.config.RsaKeyProperties' in your configuration.
+
+2024-04-07 02:21:23 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 13828 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 02:21:23 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 02:21:23 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 02:21:25 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 02:21:25 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 02:21:25 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 02:21:25 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 02:21:25 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1515 ms
+2024-04-07 02:21:26 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@67328bcb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51ba952e, org.springframework.security.web.context.SecurityContextHolderFilter@6897a4a, org.springframework.security.web.header.HeaderWriterFilter@19fec3d6, org.springframework.web.filter.CorsFilter@2416c658, org.springframework.security.web.csrf.CsrfFilter@6af310c7, org.springframework.security.web.authentication.logout.LogoutFilter@183fc2fa, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7d66e544, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@353e6389, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6d5f4900, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6c9b44bf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6bce313, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@39266403, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e40fbb3, org.springframework.security.web.access.ExceptionTranslationFilter@233f52f8, org.springframework.security.web.access.intercept.AuthorizationFilter@3d3c886f]
+2024-04-07 02:21:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer241 - Tomcat started on port 8080 (http) with context path ''
+2024-04-07 02:21:26 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication56 - Started SpringRestDemoWithGradleApplication in 3.106 seconds (process running for 3.572)
+2024-04-07 02:21:39 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 20224 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 02:21:39 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 02:21:39 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 02:21:40 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 02:21:40 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 02:21:40 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 02:21:40 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 02:21:40 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1450 ms
+2024-04-07 02:21:41 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@666618d6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b1c32e4, org.springframework.security.web.context.SecurityContextHolderFilter@355ce6a6, org.springframework.security.web.header.HeaderWriterFilter@3e856100, org.springframework.web.filter.CorsFilter@2bab618, org.springframework.security.web.csrf.CsrfFilter@6af65f29, org.springframework.security.web.authentication.logout.LogoutFilter@3c7b137a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2c2c3947, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@69ec93c2, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@48bc2fce, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@418f890f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e3f86d5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@560271a1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1eca3ea7, org.springframework.security.web.access.ExceptionTranslationFilter@2c1d57bc, org.springframework.security.web.access.intercept.AuthorizationFilter@3313d477]
+2024-04-07 02:21:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer241 - Tomcat started on port 8080 (http) with context path ''
+2024-04-07 02:21:41 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication56 - Started SpringRestDemoWithGradleApplication in 2.93 seconds (process running for 3.347)
+2024-04-07 02:22:09 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-07 02:22:09 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet532 - Initializing Servlet 'dispatcherServlet'
+2024-04-07 02:22:09 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet554 - Completed initialization in 2 ms
+2024-04-07 02:36:53 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 23852 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 02:36:53 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 02:36:53 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 02:36:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 02:36:55 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 02:36:55 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 02:36:55 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 02:36:55 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1396 ms
+2024-04-07 02:36:56 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@299b9851, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@191a0351, org.springframework.security.web.context.SecurityContextHolderFilter@5287ba5f, org.springframework.security.web.header.HeaderWriterFilter@233f52f8, org.springframework.web.filter.CorsFilter@67328bcb, org.springframework.security.web.csrf.CsrfFilter@320be73, org.springframework.security.web.authentication.logout.LogoutFilter@604d28c6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@418f890f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4be490da, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@51ba952e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5a4d4f9c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6897a4a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6986f93e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2416c658, org.springframework.security.web.access.ExceptionTranslationFilter@41e9f86, org.springframework.security.web.access.intercept.AuthorizationFilter@1511d157]
+2024-04-07 02:36:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer241 - Tomcat started on port 8080 (http) with context path ''
+2024-04-07 02:36:56 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication56 - Started SpringRestDemoWithGradleApplication in 2.975 seconds (process running for 3.405)
+2024-04-07 02:37:08 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-07 02:37:08 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet532 - Initializing Servlet 'dispatcherServlet'
+2024-04-07 02:37:08 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet554 - Completed initialization in 1 ms
+2024-04-07 02:38:43 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 19428 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 02:38:43 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 02:38:43 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 02:38:45 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 02:38:45 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 02:38:45 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 02:38:45 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 02:38:45 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1579 ms
+2024-04-07 02:38:45 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6d5f4900, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e40fbb3, org.springframework.security.web.context.SecurityContextHolderFilter@39266403, org.springframework.security.web.header.HeaderWriterFilter@6897a4a, org.springframework.web.filter.CorsFilter@1b560eb0, org.springframework.security.web.csrf.CsrfFilter@7ddcb0dc, org.springframework.security.web.authentication.logout.LogoutFilter@2c2c3947, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2bab618, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7c950b3b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@9e02f84, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@67328bcb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2aa14ae6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4be490da, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e6060f1, org.springframework.security.web.access.ExceptionTranslationFilter@5287ba5f, org.springframework.security.web.access.intercept.AuthorizationFilter@5b1c32e4]
+2024-04-07 02:38:46 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer241 - Tomcat started on port 8080 (http) with context path ''
+2024-04-07 02:38:46 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication56 - Started SpringRestDemoWithGradleApplication in 3.17 seconds (process running for 3.668)
+2024-04-07 02:38:50 [http-nio-8080-exec-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-07 02:38:50 [http-nio-8080-exec-4] INFO  o.s.web.servlet.DispatcherServlet532 - Initializing Servlet 'dispatcherServlet'
+2024-04-07 02:38:50 [http-nio-8080-exec-4] INFO  o.s.web.servlet.DispatcherServlet554 - Completed initialization in 0 ms
+2024-04-07 02:41:37 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 24024 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 02:41:37 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 02:41:37 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 02:41:38 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 02:41:38 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 02:41:38 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 02:41:38 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 02:41:38 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1320 ms
+2024-04-07 02:41:39 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1eca3ea7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24fba488, org.springframework.security.web.context.SecurityContextHolderFilter@4b9c411, org.springframework.security.web.header.HeaderWriterFilter@20440c6c, org.springframework.web.filter.CorsFilter@73a6cc79, org.springframework.security.web.csrf.CsrfFilter@49cb3881, org.springframework.security.web.authentication.logout.LogoutFilter@6424e613, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1e76afeb, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6897a4a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5a4d4f9c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5b1c32e4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@66f5b8fe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@233f52f8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@153d6d74, org.springframework.security.web.access.ExceptionTranslationFilter@28fc1132, org.springframework.security.web.access.intercept.AuthorizationFilter@53dd42d6]
+2024-04-07 02:41:39 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer241 - Tomcat started on port 8080 (http) with context path ''
+2024-04-07 02:41:39 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication56 - Started SpringRestDemoWithGradleApplication in 2.94 seconds (process running for 3.388)
+2024-04-07 02:41:45 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-07 02:41:45 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet532 - Initializing Servlet 'dispatcherServlet'
+2024-04-07 02:41:45 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet554 - Completed initialization in 1 ms
+2024-04-07 02:42:01 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 12088 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 02:42:01 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 02:42:01 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 02:42:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 02:42:03 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 02:42:03 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 02:42:03 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 02:42:03 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1884 ms
+2024-04-07 02:42:04 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@153d6d74, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6c9b44bf, org.springframework.security.web.context.SecurityContextHolderFilter@69ec93c2, org.springframework.security.web.header.HeaderWriterFilter@41e9f86, org.springframework.web.filter.CorsFilter@299b9851, org.springframework.security.web.csrf.CsrfFilter@482c351d, org.springframework.security.web.authentication.logout.LogoutFilter@4d354a3e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2c9d90fc, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@74b00247, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@191a0351, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@24fba488, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5287ba5f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@b768a65, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@67328bcb, org.springframework.security.web.access.ExceptionTranslationFilter@560271a1, org.springframework.security.web.access.intercept.AuthorizationFilter@73f6e07]
+2024-04-07 02:42:04 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer241 - Tomcat started on port 8080 (http) with context path ''
+2024-04-07 02:42:04 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication56 - Started SpringRestDemoWithGradleApplication in 3.663 seconds (process running for 4.125)
+2024-04-07 02:42:15 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-07 02:42:15 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet532 - Initializing Servlet 'dispatcherServlet'
+2024-04-07 02:42:15 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet554 - Completed initialization in 1 ms
+2024-04-07 22:28:05 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 21588 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 22:28:05 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 22:28:05 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 22:28:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 22:28:07 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 22:28:07 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 22:28:07 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 22:28:07 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1858 ms
+2024-04-07 22:28:08 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6d5f4900, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e40fbb3, org.springframework.security.web.context.SecurityContextHolderFilter@39266403, org.springframework.security.web.header.HeaderWriterFilter@6897a4a, org.springframework.web.filter.CorsFilter@1b560eb0, org.springframework.security.web.csrf.CsrfFilter@7ddcb0dc, org.springframework.security.web.authentication.logout.LogoutFilter@2c2c3947, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2bab618, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7c950b3b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@9e02f84, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@67328bcb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2aa14ae6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4be490da, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e6060f1, org.springframework.security.web.access.ExceptionTranslationFilter@5287ba5f, org.springframework.security.web.access.intercept.AuthorizationFilter@5b1c32e4]
+2024-04-07 22:28:08 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext632 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-04-07 22:28:08 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-07 22:28:08 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter40 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2024-04-07 22:34:06 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 5052 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 22:34:06 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 22:34:06 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 22:34:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 22:34:07 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 22:34:07 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 22:34:07 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 22:34:07 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1458 ms
+2024-04-07 22:34:08 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@666618d6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b1c32e4, org.springframework.security.web.context.SecurityContextHolderFilter@355ce6a6, org.springframework.security.web.header.HeaderWriterFilter@3e856100, org.springframework.web.filter.CorsFilter@2bab618, org.springframework.security.web.csrf.CsrfFilter@6af65f29, org.springframework.security.web.authentication.logout.LogoutFilter@3c7b137a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2c2c3947, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@69ec93c2, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@48bc2fce, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@418f890f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e3f86d5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@560271a1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1eca3ea7, org.springframework.security.web.access.ExceptionTranslationFilter@2c1d57bc, org.springframework.security.web.access.intercept.AuthorizationFilter@3313d477]
+2024-04-07 22:34:08 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer241 - Tomcat started on port 8080 (http) with context path ''
+2024-04-07 22:34:08 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication56 - Started SpringRestDemoWithGradleApplication in 2.92 seconds (process running for 3.366)
+2024-04-07 22:34:12 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-07 22:34:12 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet532 - Initializing Servlet 'dispatcherServlet'
+2024-04-07 22:34:12 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet554 - Completed initialization in 1 ms
+2024-04-07 22:38:45 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 16724 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 22:38:45 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 22:38:45 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 22:38:48 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 22:38:48 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 22:38:48 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 22:38:48 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 22:38:48 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 2241 ms
+2024-04-07 22:38:49 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6d5f4900, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e40fbb3, org.springframework.security.web.context.SecurityContextHolderFilter@39266403, org.springframework.security.web.header.HeaderWriterFilter@6897a4a, org.springframework.web.filter.CorsFilter@1b560eb0, org.springframework.security.web.csrf.CsrfFilter@7ddcb0dc, org.springframework.security.web.authentication.logout.LogoutFilter@2c2c3947, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2bab618, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7c950b3b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@9e02f84, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@67328bcb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2aa14ae6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4be490da, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e6060f1, org.springframework.security.web.access.ExceptionTranslationFilter@5287ba5f, org.springframework.security.web.access.intercept.AuthorizationFilter@5b1c32e4]
+2024-04-07 22:38:49 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer241 - Tomcat started on port 8080 (http) with context path ''
+2024-04-07 22:38:49 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication56 - Started SpringRestDemoWithGradleApplication in 4.387 seconds (process running for 5.175)
+2024-04-07 22:38:49 [http-nio-8080-exec-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-07 22:38:49 [http-nio-8080-exec-4] INFO  o.s.web.servlet.DispatcherServlet532 - Initializing Servlet 'dispatcherServlet'
+2024-04-07 22:38:49 [http-nio-8080-exec-4] INFO  o.s.web.servlet.DispatcherServlet554 - Completed initialization in 2 ms
+2024-04-07 22:38:49 [http-nio-8080-exec-4] WARN  o.a.c.util.SessionIdGeneratorBase173 - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [101] milliseconds.
+2024-04-07 22:42:32 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 13204 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 22:42:32 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 22:42:32 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 22:42:33 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 22:42:33 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 22:42:33 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 22:42:34 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 22:42:34 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1564 ms
+2024-04-07 22:42:34 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@52a7928a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@563ccd31, org.springframework.security.web.context.SecurityContextHolderFilter@5a48da4f, org.springframework.security.web.header.HeaderWriterFilter@6806468e, org.springframework.web.filter.CorsFilter@72465eb2, org.springframework.security.web.csrf.CsrfFilter@66f5b8fe, org.springframework.security.web.authentication.logout.LogoutFilter@666618d6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6d5f4900, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@604d28c6, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@478fb7dc, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@570a62a5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6424e613, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14efa279, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@29d25e65, org.springframework.security.web.access.ExceptionTranslationFilter@7c950b3b, org.springframework.security.web.access.intercept.AuthorizationFilter@2416c658]
+2024-04-07 22:42:35 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer241 - Tomcat started on port 8080 (http) with context path ''
+2024-04-07 22:42:35 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication56 - Started SpringRestDemoWithGradleApplication in 3.561 seconds (process running for 4.137)
+2024-04-07 22:42:44 [http-nio-8080-exec-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-07 22:42:44 [http-nio-8080-exec-4] INFO  o.s.web.servlet.DispatcherServlet532 - Initializing Servlet 'dispatcherServlet'
+2024-04-07 22:42:44 [http-nio-8080-exec-4] INFO  o.s.web.servlet.DispatcherServlet554 - Completed initialization in 2 ms
+2024-04-07 22:42:59 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 17140 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 22:42:59 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 22:42:59 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 22:43:01 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 22:43:01 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 22:43:01 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 22:43:01 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 22:43:01 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1733 ms
+2024-04-07 22:43:02 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@76216830, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7aded903, org.springframework.security.web.context.SecurityContextHolderFilter@3e4d40ea, org.springframework.security.web.header.HeaderWriterFilter@53dd42d6, org.springframework.web.filter.CorsFilter@2db86a7c, org.springframework.security.web.csrf.CsrfFilter@6806468e, org.springframework.security.web.authentication.logout.LogoutFilter@1e6060f1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@59c43561, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5b1c32e4, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@261f359f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1cd2143b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c9d90fc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1511d157, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b02a984, org.springframework.security.web.access.ExceptionTranslationFilter@4a62062a, org.springframework.security.web.access.intercept.AuthorizationFilter@19b75b2b]
+2024-04-07 22:43:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer241 - Tomcat started on port 8080 (http) with context path ''
+2024-04-07 22:43:02 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication56 - Started SpringRestDemoWithGradleApplication in 3.322 seconds (process running for 3.795)
+2024-04-07 22:43:12 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-07 22:43:12 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet532 - Initializing Servlet 'dispatcherServlet'
+2024-04-07 22:43:12 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet554 - Completed initialization in 1 ms
+2024-04-07 22:45:21 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 8032 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 22:45:21 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 22:45:21 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 22:45:23 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 22:45:23 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 22:45:23 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 22:45:23 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 22:45:23 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1467 ms
+2024-04-07 22:45:24 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@601d6622, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76216830, org.springframework.security.web.context.SecurityContextHolderFilter@447fa959, org.springframework.security.web.header.HeaderWriterFilter@7ec08115, org.springframework.web.filter.CorsFilter@7aded903, org.springframework.security.web.csrf.CsrfFilter@3af10d0b, org.springframework.security.web.authentication.logout.LogoutFilter@9e02f84, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@19b75b2b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@666618d6, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2db86a7c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@492be039, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73f6e07, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c9d90fc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@261f359f, org.springframework.security.web.access.ExceptionTranslationFilter@2c2c3947, org.springframework.security.web.access.intercept.AuthorizationFilter@29d25e65]
+2024-04-07 22:45:24 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer241 - Tomcat started on port 8080 (http) with context path ''
+2024-04-07 22:45:24 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication56 - Started SpringRestDemoWithGradleApplication in 3.016 seconds (process running for 3.477)
+2024-04-07 22:45:26 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-07 22:45:26 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet532 - Initializing Servlet 'dispatcherServlet'
+2024-04-07 22:45:26 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet554 - Completed initialization in 1 ms
+2024-04-07 22:45:39 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 6068 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 22:45:39 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 22:45:39 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 22:45:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 22:45:41 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 22:45:41 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 22:45:41 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 22:45:41 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1797 ms
+2024-04-07 22:45:42 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1cd2143b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1118d539, org.springframework.security.web.context.SecurityContextHolderFilter@53dd42d6, org.springframework.security.web.header.HeaderWriterFilter@2c2c3947, org.springframework.web.filter.CorsFilter@601d6622, org.springframework.security.web.csrf.CsrfFilter@7a65c995, org.springframework.security.web.authentication.logout.LogoutFilter@1e40fbb3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@478fb7dc, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3d3c886f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@76216830, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@52abed9d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@447fa959, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e4d40ea, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7aded903, org.springframework.security.web.access.ExceptionTranslationFilter@3a11c0eb, org.springframework.security.web.access.intercept.AuthorizationFilter@72465eb2]
+2024-04-07 22:45:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer241 - Tomcat started on port 8080 (http) with context path ''
+2024-04-07 22:45:42 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication56 - Started SpringRestDemoWithGradleApplication in 3.521 seconds (process running for 4.002)
+2024-04-07 22:49:23 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-07 22:49:23 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet532 - Initializing Servlet 'dispatcherServlet'
+2024-04-07 22:49:23 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet554 - Completed initialization in 2 ms
+2024-04-07 22:49:30 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 9172 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 22:49:30 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 22:49:30 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 22:49:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 22:49:32 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 22:49:32 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 22:49:32 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 22:49:32 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1659 ms
+2024-04-07 22:49:33 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4f114b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@257f30f7, org.springframework.security.web.context.SecurityContextHolderFilter@1eca3ea7, org.springframework.security.web.header.HeaderWriterFilter@5b1c32e4, org.springframework.web.filter.CorsFilter@3fde2209, org.springframework.security.web.csrf.CsrfFilter@604d28c6, org.springframework.security.web.authentication.logout.LogoutFilter@72465eb2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1118d539, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@67328bcb, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1f916219, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2871ac91, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73a6cc79, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a4d4f9c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@67acfde9, org.springframework.security.web.access.ExceptionTranslationFilter@7d66e544, org.springframework.security.web.access.intercept.AuthorizationFilter@1cd2143b]
+2024-04-07 22:49:33 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer241 - Tomcat started on port 8080 (http) with context path ''
+2024-04-07 22:49:33 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication56 - Started SpringRestDemoWithGradleApplication in 3.288 seconds (process running for 3.792)
+2024-04-07 22:49:35 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-07 22:49:35 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet532 - Initializing Servlet 'dispatcherServlet'
+2024-04-07 22:49:35 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet554 - Completed initialization in 1 ms
+2024-04-07 22:49:52 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 11732 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 22:49:52 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 22:49:52 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 22:49:53 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 22:49:53 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 22:49:53 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 22:49:54 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 22:49:54 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1484 ms
+2024-04-07 22:49:54 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@601d6622, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76216830, org.springframework.security.web.context.SecurityContextHolderFilter@447fa959, org.springframework.security.web.header.HeaderWriterFilter@7ec08115, org.springframework.web.filter.CorsFilter@7aded903, org.springframework.security.web.csrf.CsrfFilter@3af10d0b, org.springframework.security.web.authentication.logout.LogoutFilter@9e02f84, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@19b75b2b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@666618d6, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2db86a7c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@492be039, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73f6e07, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c9d90fc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@261f359f, org.springframework.security.web.access.ExceptionTranslationFilter@2c2c3947, org.springframework.security.web.access.intercept.AuthorizationFilter@29d25e65]
+2024-04-07 22:49:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer241 - Tomcat started on port 8080 (http) with context path ''
+2024-04-07 22:49:54 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication56 - Started SpringRestDemoWithGradleApplication in 3.023 seconds (process running for 3.488)
+2024-04-07 22:49:58 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-07 22:49:58 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet532 - Initializing Servlet 'dispatcherServlet'
+2024-04-07 22:49:58 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet554 - Completed initialization in 1 ms
+2024-04-07 22:51:20 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 5652 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 22:51:20 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 22:51:20 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 22:51:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 22:51:22 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 22:51:22 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 22:51:22 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 22:51:22 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1475 ms
+2024-04-07 22:51:22 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1cd2143b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1118d539, org.springframework.security.web.context.SecurityContextHolderFilter@53dd42d6, org.springframework.security.web.header.HeaderWriterFilter@2c2c3947, org.springframework.web.filter.CorsFilter@601d6622, org.springframework.security.web.csrf.CsrfFilter@7a65c995, org.springframework.security.web.authentication.logout.LogoutFilter@1e40fbb3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@478fb7dc, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3d3c886f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@76216830, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@52abed9d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@447fa959, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e4d40ea, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7aded903, org.springframework.security.web.access.ExceptionTranslationFilter@3a11c0eb, org.springframework.security.web.access.intercept.AuthorizationFilter@72465eb2]
+2024-04-07 22:51:23 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer241 - Tomcat started on port 8080 (http) with context path ''
+2024-04-07 22:51:23 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication56 - Started SpringRestDemoWithGradleApplication in 3.156 seconds (process running for 3.587)
+2024-04-07 22:51:26 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-07 22:51:26 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet532 - Initializing Servlet 'dispatcherServlet'
+2024-04-07 22:51:26 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet554 - Completed initialization in 1 ms
+2024-04-07 22:51:37 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 17712 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 22:51:37 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 22:51:37 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 22:51:38 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 22:51:38 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 22:51:38 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 22:51:38 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 22:51:38 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1438 ms
+2024-04-07 22:51:39 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@281b2dfd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@492be039, org.springframework.security.web.context.SecurityContextHolderFilter@4a62062a, org.springframework.security.web.header.HeaderWriterFilter@3a11c0eb, org.springframework.web.filter.CorsFilter@1cd2143b, org.springframework.security.web.csrf.CsrfFilter@353e6389, org.springframework.security.web.authentication.logout.LogoutFilter@2416c658, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@563ccd31, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1511d157, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1118d539, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1a1f79ce, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53dd42d6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e76afeb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@601d6622, org.springframework.security.web.access.ExceptionTranslationFilter@7f3c0399, org.springframework.security.web.access.intercept.AuthorizationFilter@52a7928a]
+2024-04-07 22:51:39 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer241 - Tomcat started on port 8080 (http) with context path ''
+2024-04-07 22:51:39 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication56 - Started SpringRestDemoWithGradleApplication in 2.956 seconds (process running for 3.463)
+2024-04-07 22:51:43 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-07 22:51:43 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet532 - Initializing Servlet 'dispatcherServlet'
+2024-04-07 22:51:43 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet554 - Completed initialization in 1 ms
+2024-04-07 22:53:18 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 17248 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 22:53:18 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 22:53:18 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 22:53:20 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 22:53:20 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 22:53:20 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 22:53:20 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 22:53:20 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1758 ms
+2024-04-07 22:53:21 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4f114b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@257f30f7, org.springframework.security.web.context.SecurityContextHolderFilter@1eca3ea7, org.springframework.security.web.header.HeaderWriterFilter@5b1c32e4, org.springframework.web.filter.CorsFilter@3fde2209, org.springframework.security.web.csrf.CsrfFilter@604d28c6, org.springframework.security.web.authentication.logout.LogoutFilter@72465eb2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1118d539, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@67328bcb, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1f916219, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2871ac91, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73a6cc79, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a4d4f9c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@67acfde9, org.springframework.security.web.access.ExceptionTranslationFilter@7d66e544, org.springframework.security.web.access.intercept.AuthorizationFilter@1cd2143b]
+2024-04-07 22:53:21 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer241 - Tomcat started on port 8080 (http) with context path ''
+2024-04-07 22:53:21 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication56 - Started SpringRestDemoWithGradleApplication in 3.495 seconds (process running for 3.953)
+2024-04-07 22:53:26 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 22532 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 22:53:26 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 22:53:26 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 22:53:28 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 22:53:28 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 22:53:28 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 22:53:28 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 22:53:28 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1900 ms
+2024-04-07 22:53:29 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@30f28b5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a1f79ce, org.springframework.security.web.context.SecurityContextHolderFilter@183fc2fa, org.springframework.security.web.header.HeaderWriterFilter@24a0c58b, org.springframework.web.filter.CorsFilter@6aa7e176, org.springframework.security.web.csrf.CsrfFilter@74b00247, org.springframework.security.web.authentication.logout.LogoutFilter@299b9851, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@570a62a5, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@447fa959, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@52abed9d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@634f58d2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3313d477, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c2c3947, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@281b2dfd, org.springframework.security.web.access.ExceptionTranslationFilter@e62319f, org.springframework.security.web.access.intercept.AuthorizationFilter@1a2ac487]
+2024-04-07 22:53:29 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer241 - Tomcat started on port 8080 (http) with context path ''
+2024-04-07 22:53:29 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication56 - Started SpringRestDemoWithGradleApplication in 3.694 seconds (process running for 4.272)
+2024-04-07 22:53:33 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-07 22:53:33 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet532 - Initializing Servlet 'dispatcherServlet'
+2024-04-07 22:53:33 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet554 - Completed initialization in 1 ms
+2024-04-07 22:53:55 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 7344 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 22:53:55 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 22:53:55 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 22:53:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 22:53:56 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 22:53:56 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 22:53:56 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 22:53:56 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1465 ms
+2024-04-07 22:53:57 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@492be039, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1cd2143b, org.springframework.security.web.context.SecurityContextHolderFilter@7ec08115, org.springframework.security.web.header.HeaderWriterFilter@3313d477, org.springframework.web.filter.CorsFilter@1118d539, org.springframework.security.web.csrf.CsrfFilter@15e8f9b2, org.springframework.security.web.authentication.logout.LogoutFilter@6d5f4900, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@72465eb2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@418f890f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@601d6622, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6aa7e176, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e76afeb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@447fa959, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76216830, org.springframework.security.web.access.ExceptionTranslationFilter@183fc2fa, org.springframework.security.web.access.intercept.AuthorizationFilter@563ccd31]
+2024-04-07 22:53:57 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer241 - Tomcat started on port 8080 (http) with context path ''
+2024-04-07 22:53:57 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication56 - Started SpringRestDemoWithGradleApplication in 3.087 seconds (process running for 3.548)
+2024-04-07 22:54:00 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-07 22:54:00 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet532 - Initializing Servlet 'dispatcherServlet'
+2024-04-07 22:54:00 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet554 - Completed initialization in 1 ms
+2024-04-07 22:56:32 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 12820 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 22:56:32 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 22:56:32 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 22:56:33 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 22:56:33 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 22:56:33 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 22:56:33 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 22:56:33 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1386 ms
+2024-04-07 22:56:34 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6aa7e176, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52abed9d, org.springframework.security.web.context.SecurityContextHolderFilter@3313d477, org.springframework.security.web.header.HeaderWriterFilter@7f3c0399, org.springframework.web.filter.CorsFilter@281b2dfd, org.springframework.security.web.csrf.CsrfFilter@4be490da, org.springframework.security.web.authentication.logout.LogoutFilter@67328bcb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1ee5632d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@73f6e07, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@492be039, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7b18658a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4a62062a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ec08115, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1cd2143b, org.springframework.security.web.access.ExceptionTranslationFilter@24a0c58b, org.springframework.security.web.access.intercept.AuthorizationFilter@36224f93]
+2024-04-07 22:56:34 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer241 - Tomcat started on port 8080 (http) with context path ''
+2024-04-07 22:56:34 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication56 - Started SpringRestDemoWithGradleApplication in 2.859 seconds (process running for 3.34)
+2024-04-07 22:56:47 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-07 22:56:47 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet532 - Initializing Servlet 'dispatcherServlet'
+2024-04-07 22:56:47 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet554 - Completed initialization in 1 ms
+2024-04-07 22:59:13 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 4468 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 22:59:13 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 22:59:13 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 22:59:15 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 22:59:15 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 22:59:15 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 22:59:15 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 22:59:15 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1477 ms
+2024-04-07 22:59:16 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@66f16742, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2871ac91, org.springframework.security.web.context.SecurityContextHolderFilter@666618d6, org.springframework.security.web.header.HeaderWriterFilter@418f890f, org.springframework.web.filter.CorsFilter@3c54ddec, org.springframework.security.web.csrf.CsrfFilter@8e99809, org.springframework.security.web.authentication.logout.LogoutFilter@36224f93, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@52abed9d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@153d6d74, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6d69a0d3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5b02a984, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2bab618, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@48bc2fce, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f114b, org.springframework.security.web.access.ExceptionTranslationFilter@2c9d90fc, org.springframework.security.web.access.intercept.AuthorizationFilter@6aa7e176]
+2024-04-07 22:59:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer241 - Tomcat started on port 8080 (http) with context path ''
+2024-04-07 22:59:16 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication56 - Started SpringRestDemoWithGradleApplication in 3.047 seconds (process running for 3.551)
+2024-04-07 22:59:34 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-07 22:59:34 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet532 - Initializing Servlet 'dispatcherServlet'
+2024-04-07 22:59:34 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet554 - Completed initialization in 1 ms
+2024-04-07 22:59:49 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 3216 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 22:59:49 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 22:59:49 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 22:59:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 22:59:51 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 22:59:51 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 22:59:51 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 22:59:51 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1535 ms
+2024-04-07 22:59:51 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5c313224, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e1e837d, org.springframework.security.web.context.SecurityContextHolderFilter@7d2c9361, org.springframework.security.web.header.HeaderWriterFilter@740a0d5e, org.springframework.web.filter.CorsFilter@4b957db0, org.springframework.security.web.authentication.logout.LogoutFilter@3a0aaaf0, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@4b03cbad, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@fbe70d8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64021427, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d71b500, org.springframework.security.web.session.SessionManagementFilter@6f930e0, org.springframework.security.web.access.ExceptionTranslationFilter@4f081b5d, org.springframework.security.web.access.intercept.AuthorizationFilter@691541bc]
+2024-04-07 22:59:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer241 - Tomcat started on port 8080 (http) with context path ''
+2024-04-07 22:59:52 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication56 - Started SpringRestDemoWithGradleApplication in 3.246 seconds (process running for 3.698)
+2024-04-07 22:59:55 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-07 22:59:55 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet532 - Initializing Servlet 'dispatcherServlet'
+2024-04-07 22:59:55 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet554 - Completed initialization in 1 ms
+2024-04-07 23:00:47 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 15012 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 23:00:47 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 23:00:47 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 23:00:49 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 23:00:49 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 23:00:49 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 23:00:50 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 23:00:50 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 2149 ms
+2024-04-07 23:00:50 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@40d848f9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4a864d4d, org.springframework.security.web.context.SecurityContextHolderFilter@49580ca8, org.springframework.security.web.header.HeaderWriterFilter@6a2d867d, org.springframework.web.filter.CorsFilter@7d3691e1, org.springframework.security.web.csrf.CsrfFilter@64021427, org.springframework.security.web.authentication.logout.LogoutFilter@527a8665, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@269222ae, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@42fc4ac4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20a24edf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@46a123e4, org.springframework.security.web.session.SessionManagementFilter@58687fb7, org.springframework.security.web.access.ExceptionTranslationFilter@1e00bfe2, org.springframework.security.web.access.intercept.AuthorizationFilter@5e599100]
+2024-04-07 23:00:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer241 - Tomcat started on port 8080 (http) with context path ''
+2024-04-07 23:00:51 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication56 - Started SpringRestDemoWithGradleApplication in 4.087 seconds (process running for 4.586)
+2024-04-07 23:00:58 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-07 23:00:58 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet532 - Initializing Servlet 'dispatcherServlet'
+2024-04-07 23:00:58 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet554 - Completed initialization in 2 ms
+2024-04-07 23:01:02 [http-nio-8080-exec-1] INFO  o.s.api.AbstractOpenApiResource390 - Init duration for springdoc-openapi is: 317 ms
+2024-04-07 23:03:12 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 5652 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-04-07 23:03:12 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-04-07 23:03:12 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-04-07 23:03:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-04-07 23:03:13 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-04-07 23:03:13 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-07 23:03:13 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-04-07 23:03:13 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 1687 ms
+2024-04-07 23:03:14 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3c28e5b6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7558c24b, org.springframework.security.web.context.SecurityContextHolderFilter@491f8831, org.springframework.security.web.header.HeaderWriterFilter@15214920, org.springframework.web.filter.CorsFilter@3a296107, org.springframework.security.web.csrf.CsrfFilter@357c9bd9, org.springframework.security.web.authentication.logout.LogoutFilter@3757e8e2, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@46a123e4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b733ef7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43a4a9e5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f129467, org.springframework.security.web.session.SessionManagementFilter@42fc4ac4, org.springframework.security.web.access.ExceptionTranslationFilter@3830b06c, org.springframework.security.web.access.intercept.AuthorizationFilter@6b162ecc]
+2024-04-07 23:03:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer241 - Tomcat started on port 8080 (http) with context path ''
+2024-04-07 23:03:14 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication56 - Started SpringRestDemoWithGradleApplication in 3.335 seconds (process running for 3.773)
+2024-04-07 23:03:16 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-07 23:03:16 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet532 - Initializing Servlet 'dispatcherServlet'
+2024-04-07 23:03:16 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet554 - Completed initialization in 2 ms
+2024-04-07 23:03:17 [http-nio-8080-exec-9] INFO  o.s.api.AbstractOpenApiResource390 - Init duration for springdoc-openapi is: 320 ms
