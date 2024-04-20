@@ -69,12 +69,15 @@ public class SecurityConfig {
 
     @Bean
     SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http.csrf(csrf -> csrf.ignoringRequestMatchers("/db-console/**"))
-                .authorizeHttpRequests((requests) -> requests.requestMatchers("/auth/token").permitAll()
-                        .requestMatchers("/auth/users/add").permitAll().requestMatchers("/")
-                        .permitAll().requestMatchers("/swagger-ui/**").permitAll().requestMatchers("/v3/api-docs/**")
-                        .permitAll()
-                        .requestMatchers("/db-console/**").permitAll().requestMatchers("/test").authenticated());
+        http.authorizeHttpRequests((requests) -> requests
+                .requestMatchers("/auth/token").permitAll()
+                .requestMatchers("/auth/users/add").permitAll()
+                .requestMatchers("/").permitAll()
+                .requestMatchers("/swagger-ui/**").permitAll()
+                .requestMatchers("/v3/api-docs/**").permitAll()
+                .requestMatchers("/db-console/**").permitAll()
+                .requestMatchers("/auth/users").hasAuthority("SCOPE_ROLE_USER")
+                .requestMatchers("/test").authenticated());
         http.oauth2ResourceServer(r -> r.jwt(jwt -> {
         }));
         http.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
