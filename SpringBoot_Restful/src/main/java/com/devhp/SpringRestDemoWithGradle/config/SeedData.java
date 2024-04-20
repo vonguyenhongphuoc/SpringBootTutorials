@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 
 import com.devhp.SpringRestDemoWithGradle.model.Account;
 import com.devhp.SpringRestDemoWithGradle.service.AccountService;
+import com.devhp.SpringRestDemoWithGradle.util.constants.Authority;
 
 @Component
 public class SeedData implements CommandLineRunner {
@@ -20,12 +21,12 @@ public class SeedData implements CommandLineRunner {
 
         account01.setEmail("user@user.com");
         account01.setPassword("pass987");
-        account01.setRole("ROLE_USER");
+        account01.setAuthorities(Authority.USER.toString());
         accountService.save(account01);
 
         account02.setEmail("admin@admin.com");
         account02.setPassword("pass987");
-        account02.setRole("ROLE_ADMIN");
+        account02.setAuthorities(Authority.ADMIN+" "+Authority.USER);;
         accountService.save(account02);
 
     }
