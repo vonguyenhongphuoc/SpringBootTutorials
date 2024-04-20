@@ -18,7 +18,6 @@ import org.springframework.security.oauth2.jwt.NimbusJwtDecoder;
 import org.springframework.security.oauth2.jwt.NimbusJwtEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
-import com.devhp.SpringRestDemoWithGradle.util.constants.Authority;
 import com.devhp.SpringRestDemoWithGradle.util.constants.Constants;
 import com.nimbusds.jose.JOSEException;
 import com.nimbusds.jose.jwk.JWKSet;
@@ -78,6 +77,7 @@ public class SecurityConfig {
                 .requestMatchers("/v3/api-docs/**").permitAll()
                 .requestMatchers("/db-console/**").permitAll()
                 .requestMatchers("/auth/users").hasAuthority("SCOPE_ADMIN")
+                .requestMatchers("/auth/profile").authenticated()
                 .requestMatchers("/test").authenticated());
         http.oauth2ResourceServer(r -> r.jwt(jwt -> {
         }));
