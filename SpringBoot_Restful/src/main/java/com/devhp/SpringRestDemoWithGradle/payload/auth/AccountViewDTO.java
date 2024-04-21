@@ -15,5 +15,5 @@ public class AccountViewDTO {
 
     private String email;
 
-    private String role;
+    private String authorities;
 }

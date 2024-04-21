@@ -13,5 +13,5 @@ public class ProfileDTO {
 
     private String email;
 
-    private String role;
+    private String authorities;
 }

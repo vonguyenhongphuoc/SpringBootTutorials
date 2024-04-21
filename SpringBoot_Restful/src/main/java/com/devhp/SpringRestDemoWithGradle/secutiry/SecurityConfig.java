@@ -78,7 +78,8 @@ public class SecurityConfig {
                 .requestMatchers("/db-console/**").permitAll()
                 .requestMatchers("/auth/users").hasAuthority("SCOPE_ADMIN")
                 .requestMatchers("/auth/profile").authenticated()
-                .requestMatchers("/test").authenticated());
+                .requestMatchers("/test").authenticated()
+                .requestMatchers("/auth/profile/update-password").authenticated());
         http.oauth2ResourceServer(r -> r.jwt(jwt -> {
         }));
         http.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));

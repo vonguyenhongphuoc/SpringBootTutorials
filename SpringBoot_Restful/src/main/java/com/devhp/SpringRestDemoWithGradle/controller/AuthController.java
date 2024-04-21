@@ -22,6 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.devhp.SpringRestDemoWithGradle.model.Account;
 import com.devhp.SpringRestDemoWithGradle.payload.auth.AccountDTO;
 import com.devhp.SpringRestDemoWithGradle.payload.auth.AccountViewDTO;
+import com.devhp.SpringRestDemoWithGradle.payload.auth.PasswordDTO;
 import com.devhp.SpringRestDemoWithGradle.payload.auth.ProfileDTO;
 import com.devhp.SpringRestDemoWithGradle.payload.auth.TokenDTO;
 import com.devhp.SpringRestDemoWithGradle.payload.auth.UserLoginDTO;
@@ -110,5 +111,24 @@ public class AuthController {
         }
 
         return new ProfileDTO(0, "", "");
+    }
+
+    @PostMapping(value = "/profile/update-password", consumes = "application/json" ,produces = "application/json")
+    @SecurityRequirement(name = Constants.SECURITY_APP_NAME)
+    public AccountViewDTO updatePassword(@Valid @RequestBody PasswordDTO passwordDTO, Authentication authentication) {
+        if (authentication != null) {
+            String email = authentication.getName();
+            Optional<Account> optionalAccount = accountService.findByEmail(email);
+            if (optionalAccount.isPresent()) {
+                Account account = optionalAccount.get();
+                account.setPassword(passwordDTO.getPassword());
+                accountService.save(account); 
+                AccountViewDTO accountViewDTO = new AccountViewDTO(account.getId(), account.getEmail(), account.getAuthorities());
+                return accountViewDTO;
+            }
+            return null;
+        }
+
+        return null;
     }
 }
