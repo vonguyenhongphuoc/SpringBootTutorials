@@ -80,7 +80,8 @@ public class SecurityConfig {
                 .requestMatchers("/auth/profile").authenticated()
                 .requestMatchers("/test").authenticated()
                 .requestMatchers("/auth/profile/update-password").authenticated()
-                .requestMatchers("auth/users/{user_id}/update-authorities").hasAuthority("SCOPE_ADMIN"));
+                .requestMatchers("/auth/users/{user_id}/update-authorities").hasAuthority("SCOPE_ADMIN")
+                .requestMatchers("/auth/profile/delete").authenticated());
         http.oauth2ResourceServer(r -> r.jwt(jwt -> {
         }));
         http.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));

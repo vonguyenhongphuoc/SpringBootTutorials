@@ -11,6 +11,7 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -145,4 +146,21 @@ public class AuthController {
         return new ResponseEntity<AccountViewDTO>(new AccountViewDTO(), HttpStatus.BAD_REQUEST);
 
     }
+
+    @DeleteMapping(value = "/profile/delete")
+    @SecurityRequirement(name = Constants.SECURITY_APP_NAME)
+    public ResponseEntity<String> deleteProfile(Authentication authentication) {
+        try {
+            String email = authentication.getName();
+            Optional<Account> optionalAccount = accountService.findByEmail(email);
+            if (optionalAccount.isPresent()) {
+                accountService.deleteById(optionalAccount.get().getId());
+                return ResponseEntity.ok("User deleted");
+            }
+            return new ResponseEntity<String>("Account not found", HttpStatus.BAD_REQUEST);
+        } catch (Exception e) {
+            return new ResponseEntity<String>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
+    }
+
 }
