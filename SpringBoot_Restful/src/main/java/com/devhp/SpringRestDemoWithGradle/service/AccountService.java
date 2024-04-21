@@ -35,12 +35,20 @@ public class AccountService implements UserDetailsService {
         return accountRepository.save(account);
     }
 
+    public Account updateAuthorities(Account account) {
+        return accountRepository.save(account);
+    }
+
     public List<Account> findAll() {
         return accountRepository.findAll();
     }
 
-    public Optional<Account> findByEmail(String email){
-       return accountRepository.findByEmail(email);
+    public Optional<Account> findByEmail(String email) {
+        return accountRepository.findByEmail(email);
+    }
+
+    public Optional<Account> findById(long id) {
+        return accountRepository.findById(id);
     }
 
     @Override

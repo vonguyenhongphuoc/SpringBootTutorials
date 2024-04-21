@@ -1,6 +1,5 @@
 package com.devhp.SpringRestDemoWithGradle.controller;
 
-import java.lang.StackWalker.Option;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -13,7 +12,9 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
@@ -22,6 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.devhp.SpringRestDemoWithGradle.model.Account;
 import com.devhp.SpringRestDemoWithGradle.payload.auth.AccountDTO;
 import com.devhp.SpringRestDemoWithGradle.payload.auth.AccountViewDTO;
+import com.devhp.SpringRestDemoWithGradle.payload.auth.AuthoritiesDTO;
 import com.devhp.SpringRestDemoWithGradle.payload.auth.PasswordDTO;
 import com.devhp.SpringRestDemoWithGradle.payload.auth.ProfileDTO;
 import com.devhp.SpringRestDemoWithGradle.payload.auth.TokenDTO;
@@ -99,36 +101,48 @@ public class AuthController {
     @GetMapping(value = "/profile", produces = "application/json")
     @SecurityRequirement(name = Constants.SECURITY_APP_NAME)
     public ProfileDTO profile(Authentication authentication) {
-        if (authentication != null) {
-            String email = authentication.getName();
-            Optional<Account> optionalAccount = accountService.findByEmail(email);
-            if (optionalAccount.isPresent()) {
-                Account account = optionalAccount.get();
-                ProfileDTO profileDTO = new ProfileDTO(account.getId(), account.getEmail(), account.getAuthorities());
-                return profileDTO;
-            }
-            return null;
+        String email = authentication.getName();
+        Optional<Account> optionalAccount = accountService.findByEmail(email);
+        if (optionalAccount.isPresent()) {
+            Account account = optionalAccount.get();
+            ProfileDTO profileDTO = new ProfileDTO(account.getId(), account.getEmail(), account.getAuthorities());
+            return profileDTO;
         }
+        return null;
 
-        return new ProfileDTO(0, "", "");
     }
 
-    @PostMapping(value = "/profile/update-password", consumes = "application/json" ,produces = "application/json")
+    @PutMapping(value = "/profile/update-password", consumes = "application/json", produces = "application/json")
     @SecurityRequirement(name = Constants.SECURITY_APP_NAME)
     public AccountViewDTO updatePassword(@Valid @RequestBody PasswordDTO passwordDTO, Authentication authentication) {
-        if (authentication != null) {
-            String email = authentication.getName();
-            Optional<Account> optionalAccount = accountService.findByEmail(email);
-            if (optionalAccount.isPresent()) {
-                Account account = optionalAccount.get();
-                account.setPassword(passwordDTO.getPassword());
-                accountService.save(account); 
-                AccountViewDTO accountViewDTO = new AccountViewDTO(account.getId(), account.getEmail(), account.getAuthorities());
-                return accountViewDTO;
-            }
-            return null;
+        String email = authentication.getName();
+        Optional<Account> optionalAccount = accountService.findByEmail(email);
+        if (optionalAccount.isPresent()) {
+            Account account = optionalAccount.get();
+            account.setPassword(passwordDTO.getPassword());
+            accountService.save(account);
+            AccountViewDTO accountViewDTO = new AccountViewDTO(account.getId(), account.getEmail(),
+                    account.getAuthorities());
+            return accountViewDTO;
         }
-
         return null;
+
+    }
+
+    @PutMapping(value = "/users/update-authorities/{user_id}", consumes = "application/json", produces = "application/json")
+    @SecurityRequirement(name = Constants.SECURITY_APP_NAME)
+    public AccountViewDTO updateAuthoritires(@Valid @RequestBody AuthoritiesDTO authoritiesDTO,
+            Authentication authentication, @PathVariable("user_id") long userId) {
+        Optional<Account> optionalAccount = accountService.findById(userId);
+        if (optionalAccount.isPresent()) {
+            Account account = optionalAccount.get();
+            account.setAuthorities(authoritiesDTO.getAuthorities());
+            accountService.updateAuthorities(account);
+            AccountViewDTO accountViewDTO = new AccountViewDTO(account.getId(), account.getEmail(),
+                    account.getAuthorities());
+            return accountViewDTO;
+        }
+        return null;
+
     }
 }
