@@ -129,9 +129,9 @@ public class AuthController {
 
     }
 
-    @PutMapping(value = "/users/update-authorities/{user_id}", consumes = "application/json", produces = "application/json")
+    @PutMapping(value = "/users/{user_id}/update-authorities", consumes = "application/json", produces = "application/json")
     @SecurityRequirement(name = Constants.SECURITY_APP_NAME)
-    public AccountViewDTO updateAuthoritires(@Valid @RequestBody AuthoritiesDTO authoritiesDTO,
+    public ResponseEntity<AccountViewDTO> updateAuthoritires(@Valid @RequestBody AuthoritiesDTO authoritiesDTO,
             Authentication authentication, @PathVariable("user_id") long userId) {
         Optional<Account> optionalAccount = accountService.findById(userId);
         if (optionalAccount.isPresent()) {
@@ -140,9 +140,9 @@ public class AuthController {
             accountService.updateAuthorities(account);
             AccountViewDTO accountViewDTO = new AccountViewDTO(account.getId(), account.getEmail(),
                     account.getAuthorities());
-            return accountViewDTO;
+            return ResponseEntity.ok(accountViewDTO);
         }
-        return null;
+        return new ResponseEntity<AccountViewDTO>(new AccountViewDTO(), HttpStatus.BAD_REQUEST);
 
     }
 }
