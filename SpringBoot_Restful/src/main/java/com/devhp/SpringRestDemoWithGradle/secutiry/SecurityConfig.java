@@ -82,7 +82,8 @@ public class SecurityConfig {
                 .requestMatchers("/auth/profile/update-password").authenticated()
                 .requestMatchers("/auth/users/{user_id}/update-authorities").hasAuthority("SCOPE_ADMIN")
                 .requestMatchers("/auth/profile/delete").authenticated()
-                .requestMatchers("/api/v1/album/albums/add").authenticated());
+                .requestMatchers("/api/v1/album/add").authenticated()
+                .requestMatchers("/api/v1/album/").authenticated());
         http.oauth2ResourceServer(r -> r.jwt(jwt -> {
         }));
         http.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));

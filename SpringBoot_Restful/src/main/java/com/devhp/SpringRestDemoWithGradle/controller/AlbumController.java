@@ -1,5 +1,7 @@
 package com.devhp.SpringRestDemoWithGradle.controller;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,13 +24,11 @@ import com.devhp.SpringRestDemoWithGradle.service.AlbumService;
 import com.devhp.SpringRestDemoWithGradle.util.constants.AlbumError;
 import com.devhp.SpringRestDemoWithGradle.util.constants.Constants;
 
-
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
-
-
+import org.springframework.web.bind.annotation.GetMapping;
 
 @RestController
 @RequestMapping("/api/v1/album")
@@ -41,12 +41,12 @@ public class AlbumController {
 
     @Autowired
     private AlbumService albumService;
-    
 
-    @PostMapping(value = "/albums/add",  consumes = "application/json", produces = "application/json")
+    @PostMapping(value = "/add", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.CREATED)
     @SecurityRequirement(name = Constants.SECURITY_APP_NAME)
-    public ResponseEntity<AlbumViewDTO> addAlbum(@Valid @RequestBody AlbumPayloadDTO albumPayloadDTO,Authentication authentication) { 
+    public ResponseEntity<AlbumViewDTO> addAlbum(@Valid @RequestBody AlbumPayloadDTO albumPayloadDTO,
+            Authentication authentication) {
         try {
             Album album = new Album();
             album.setName(albumPayloadDTO.getName());
@@ -55,12 +55,27 @@ public class AlbumController {
             Optional<Account> optionalAccount = accountService.findByEmail(email);
             Account account = optionalAccount.get();
             album.setAccount(account);
-a            albumService.save(album);
-            AlbumViewDTO albumViewDTO = new AlbumViewDTO(album.getId(),album.getName(), album.getDescription());
+            albumService.save(album);
+            AlbumViewDTO albumViewDTO = new AlbumViewDTO(album.getId(), album.getName(), album.getDescription());
             return ResponseEntity.ok(albumViewDTO);
         } catch (Exception e) {
             log.debug(AlbumError.ADD_ALBUM_ERROR.toString() + ": " + e.getMessage());
             return new ResponseEntity<AlbumViewDTO>(HttpStatus.BAD_REQUEST);
         }
     }
+
+    @GetMapping(value = "/")
+    @SecurityRequirement(name = Constants.SECURITY_APP_NAME)
+    public List<AlbumViewDTO> albums(Authentication authentication) {
+        String email = authentication.getName();
+        Optional<Account> optionalAccount = accountService.findByEmail(email);
+        Account account = optionalAccount.get();
+        List<AlbumViewDTO> albums = new ArrayList<>();
+        for (Album album : albumService.findByAccount_id(account.getId())) {
+            albums.add(new AlbumViewDTO(album.getId(), album.getName(), album.getDescription()));
+
+        }
+        return albums;
+    }
+
 }
