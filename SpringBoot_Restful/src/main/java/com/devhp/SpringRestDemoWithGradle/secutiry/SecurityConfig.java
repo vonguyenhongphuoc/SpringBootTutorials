@@ -77,13 +77,14 @@ public class SecurityConfig {
                 .requestMatchers("/v3/api-docs/**").permitAll()
                 .requestMatchers("/db-console/**").permitAll()
                 .requestMatchers("/auth/users").hasAuthority("SCOPE_ADMIN")
+                .requestMatchers("/auth/users/{user_id}/update-authorities").hasAuthority("SCOPE_ADMIN")
                 .requestMatchers("/auth/profile").authenticated()
                 .requestMatchers("/test").authenticated()
                 .requestMatchers("/auth/profile/update-password").authenticated()
-                .requestMatchers("/auth/users/{user_id}/update-authorities").hasAuthority("SCOPE_ADMIN")
                 .requestMatchers("/auth/profile/delete").authenticated()
                 .requestMatchers("/api/v1/album/add").authenticated()
-                .requestMatchers("/api/v1/album/").authenticated());
+                .requestMatchers("/api/v1/album/").authenticated()
+                .requestMatchers("/api/v1/album/{album_id}/photos").authenticated());
         http.oauth2ResourceServer(r -> r.jwt(jwt -> {
         }));
         http.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
