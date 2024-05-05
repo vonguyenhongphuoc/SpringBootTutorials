@@ -765,3 +765,57 @@ java.lang.IllegalArgumentException: Request part name for argument type [[Lorg.s
 2024-05-05 15:15:58 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-05-05 15:15:59 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet532 - Initializing Servlet 'dispatcherServlet'
 2024-05-05 15:15:59 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet554 - Completed initialization in 1 ms
+2024-05-05 18:55:37 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 17040 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-05-05 18:55:37 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-05-05 18:55:37 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-05-05 18:55:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-05 18:55:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate208 - Finished Spring Data repository scanning in 118 ms. Found 3 JPA repository interfaces.
+2024-05-05 18:55:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-05-05 18:55:41 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-05-05 18:55:41 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-05 18:55:41 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-05-05 18:55:41 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 4010 ms
+2024-05-05 18:55:41 [main] INFO  com.zaxxer.hikari.HikariDataSource110 - HikariPool-1 - Starting...
+2024-05-05 18:55:42 [main] INFO  com.zaxxer.hikari.pool.HikariPool565 - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/db user=ADMIN
+2024-05-05 18:55:42 [main] INFO  com.zaxxer.hikari.HikariDataSource123 - HikariPool-1 - Start completed.
+2024-05-05 18:55:42 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration88 - H2 console available at '/db-console'. Database available at 'jdbc:h2:file:./db/db'
+2024-05-05 18:55:42 [main] INFO  o.h.jpa.internal.util.LogHelper31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-05 18:55:43 [main] INFO  org.hibernate.Version44 - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-05 18:55:43 [main] INFO  o.h.c.i.RegionFactoryInitiator50 - HHH000026: Second-level cache disabled
+2024-05-05 18:55:43 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-05 18:55:43 [main] WARN  org.hibernate.orm.deprecation153 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-05 18:55:45 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-05 18:55:45 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-05 18:55:47 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-05 18:55:48 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2a0d8df8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@63be4548, org.springframework.security.web.context.SecurityContextHolderFilter@1043c493, org.springframework.security.web.header.HeaderWriterFilter@3f523dae, org.springframework.web.filter.CorsFilter@232899d1, org.springframework.security.web.authentication.logout.LogoutFilter@6bab373c, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@6ae55678, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12115c28, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@cc3fc5c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@522221e1, org.springframework.security.web.session.SessionManagementFilter@403f6c04, org.springframework.security.web.access.ExceptionTranslationFilter@b1d7b09, org.springframework.security.web.access.intercept.AuthorizationFilter@7d5ddfac]
+2024-05-05 18:55:49 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer241 - Tomcat started on port 8080 (http) with context path ''
+2024-05-05 18:55:49 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication56 - Started SpringRestDemoWithGradleApplication in 13.343 seconds (process running for 14.586)
+2024-05-05 18:56:15 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 2076 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-05-05 18:56:15 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-05-05 18:56:15 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-05-05 18:56:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-05 18:56:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate208 - Finished Spring Data repository scanning in 92 ms. Found 3 JPA repository interfaces.
+2024-05-05 18:56:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-05-05 18:56:18 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-05-05 18:56:18 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-05 18:56:18 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-05-05 18:56:18 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 3170 ms
+2024-05-05 18:56:18 [main] INFO  com.zaxxer.hikari.HikariDataSource110 - HikariPool-1 - Starting...
+2024-05-05 18:56:19 [main] INFO  com.zaxxer.hikari.pool.HikariPool565 - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/db user=ADMIN
+2024-05-05 18:56:19 [main] INFO  com.zaxxer.hikari.HikariDataSource123 - HikariPool-1 - Start completed.
+2024-05-05 18:56:19 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration88 - H2 console available at '/db-console'. Database available at 'jdbc:h2:file:./db/db'
+2024-05-05 18:56:19 [main] INFO  o.h.jpa.internal.util.LogHelper31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-05 18:56:19 [main] INFO  org.hibernate.Version44 - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-05 18:56:19 [main] INFO  o.h.c.i.RegionFactoryInitiator50 - HHH000026: Second-level cache disabled
+2024-05-05 18:56:20 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-05 18:56:20 [main] WARN  org.hibernate.orm.deprecation153 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-05 18:56:22 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-05 18:56:22 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-05 18:56:24 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-05 18:56:25 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2c9430c6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@66978c15, org.springframework.security.web.context.SecurityContextHolderFilter@36995784, org.springframework.security.web.header.HeaderWriterFilter@cc3fc5c, org.springframework.web.filter.CorsFilter@6c96dc5c, org.springframework.security.web.authentication.logout.LogoutFilter@76e4df53, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@2735a7dc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@740530b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3dd8b40e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@61b6f287, org.springframework.security.web.session.SessionManagementFilter@16df0ebd, org.springframework.security.web.access.ExceptionTranslationFilter@2b27d5d3, org.springframework.security.web.access.intercept.AuthorizationFilter@232899d1]
+2024-05-05 18:56:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer241 - Tomcat started on port 8080 (http) with context path ''
+2024-05-05 18:56:26 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication56 - Started SpringRestDemoWithGradleApplication in 11.355 seconds (process running for 13.001)
+2024-05-05 18:56:28 [http-nio-8080-exec-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-05 18:56:28 [http-nio-8080-exec-4] INFO  o.s.web.servlet.DispatcherServlet532 - Initializing Servlet 'dispatcherServlet'
+2024-05-05 18:56:28 [http-nio-8080-exec-4] INFO  o.s.web.servlet.DispatcherServlet554 - Completed initialization in 2 ms
+2024-05-05 18:56:30 [http-nio-8080-exec-7] INFO  o.s.api.AbstractOpenApiResource390 - Init duration for springdoc-openapi is: 826 ms

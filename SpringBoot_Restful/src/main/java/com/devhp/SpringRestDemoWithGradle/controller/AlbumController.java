@@ -26,10 +26,12 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.devhp.SpringRestDemoWithGradle.model.Account;
 import com.devhp.SpringRestDemoWithGradle.model.Album;
+import com.devhp.SpringRestDemoWithGradle.model.Photo;
 import com.devhp.SpringRestDemoWithGradle.payload.album.AlbumPayloadDTO;
 import com.devhp.SpringRestDemoWithGradle.payload.album.AlbumViewDTO;
 import com.devhp.SpringRestDemoWithGradle.service.AccountService;
 import com.devhp.SpringRestDemoWithGradle.service.AlbumService;
+import com.devhp.SpringRestDemoWithGradle.service.PhotoService;
 import com.devhp.SpringRestDemoWithGradle.util.AppUtils.AppUtil;
 import com.devhp.SpringRestDemoWithGradle.util.constants.AlbumError;
 import com.devhp.SpringRestDemoWithGradle.util.constants.Constants;
@@ -53,6 +55,9 @@ public class AlbumController {
 
     @Autowired
     private AlbumService albumService;
+
+    @Autowired
+    private PhotoService photoService;
 
     @PostMapping(value = "/add", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.CREATED)
@@ -98,7 +103,7 @@ public class AlbumController {
         String email = authentication.getName();
         Optional<Account> optionalAccount = accountService.findByEmail(email);
         Optional<Album> optionalAlbum = albumService.findById(albumId);
-      
+
         if (optionalAccount.isPresent() && optionalAlbum.isPresent()) {
             Album album = optionalAlbum.get();
             Account account = optionalAccount.get();
@@ -111,31 +116,39 @@ public class AlbumController {
 
             Arrays.asList(files).stream().forEach(file -> {
                 String contentType = file.getContentType();
-                if(contentType.equals("image/png") || contentType.equals("image/jpg") || contentType.equals("image/jpeg")){
+                if (contentType.equals("image/png") || contentType.equals("image/jpg")
+                        || contentType.equals("image/jpeg")) {
                     fileNamesWithSuccess.add(file.getOriginalFilename());
 
                     int length = 10;
                     boolean userLetters = true;
                     boolean useNumbers = true;
                     try {
-                        String fileName= file.getOriginalFilename();
+                        String fileName = file.getOriginalFilename();
                         String generatedString = RandomStringUtils.random(length, userLetters, useNumbers);
                         String final_photo_name = generatedString + fileName;
                         String absolute_fileLocation = AppUtil.getPhotoUploadPath(final_photo_name, albumId);
                         Path path = Paths.get(absolute_fileLocation);
                         Files.copy(file.getInputStream(), path, StandardCopyOption.REPLACE_EXISTING);
+                        Photo photo = new Photo();
+                        photo.setName(fileName);
+                        photo.setOriginalFileName(final_photo_name);
+                        photo.setAlbum(album);
+                        photoService.save(photo);
                     } catch (Exception e) {
                         // TODO: handle exception
                     }
+                } else {
+                    fileNamesWithError.add(file.getOriginalFilename());
                 }
-               
+
             });
+            return ResponseEntity.ok(fileNamesWithSuccess);
 
         } else {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
         }
 
-        return null;
 
     }
 
