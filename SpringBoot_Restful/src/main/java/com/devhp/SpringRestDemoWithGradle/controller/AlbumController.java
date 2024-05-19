@@ -38,6 +38,7 @@ import com.devhp.SpringRestDemoWithGradle.model.Album;
 import com.devhp.SpringRestDemoWithGradle.model.Photo;
 import com.devhp.SpringRestDemoWithGradle.payload.album.AlbumPayloadDTO;
 import com.devhp.SpringRestDemoWithGradle.payload.album.AlbumViewDTO;
+import com.devhp.SpringRestDemoWithGradle.payload.album.PhotoDTO;
 import com.devhp.SpringRestDemoWithGradle.service.AccountService;
 import com.devhp.SpringRestDemoWithGradle.service.AlbumService;
 import com.devhp.SpringRestDemoWithGradle.service.PhotoService;
@@ -50,7 +51,7 @@ import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.RequestParam;
+
 
 
 @RestController
@@ -86,7 +87,7 @@ public class AlbumController {
             Account account = optionalAccount.get();
             album.setAccount(account);
             albumService.save(album);
-            AlbumViewDTO albumViewDTO = new AlbumViewDTO(album.getId(), album.getName(), album.getDescription());
+            AlbumViewDTO albumViewDTO = new AlbumViewDTO(album.getId(), album.getName(), album.getDescription(), null);
             return ResponseEntity.ok(albumViewDTO);
         } catch (Exception e) {
             log.debug(AlbumError.ADD_ALBUM_ERROR.toString() + ": " + e.getMessage());
@@ -102,7 +103,14 @@ public class AlbumController {
         Account account = optionalAccount.get();
         List<AlbumViewDTO> albums = new ArrayList<>();
         for (Album album : albumService.findByAccount_id(account.getId())) {
-            albums.add(new AlbumViewDTO(album.getId(), album.getName(), album.getDescription()));
+          
+            List<PhotoDTO> photos = new ArrayList<>();
+            for(Photo photo: photoService.findByAlbumId(album.getId())){
+                String link =  "albums/"+album.getId()+"/photos/"+photo.getId()+"/downloadPhoto";
+                photos.add(new PhotoDTO(photo.getId(), photo.getName(), photo.getDescription(), photo.getFileName(), link));
+            }
+            albums.add(new AlbumViewDTO(album.getId(), album.getName(), album.getDescription(), photos));
+
 
         }
         return albums;
