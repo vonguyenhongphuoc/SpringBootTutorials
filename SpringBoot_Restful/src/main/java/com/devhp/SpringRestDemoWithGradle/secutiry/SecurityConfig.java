@@ -83,10 +83,11 @@ public class SecurityConfig {
                 .requestMatchers("/auth/profile/update-password").authenticated()
                 .requestMatchers("/auth/profile/delete").authenticated()
                 .requestMatchers("/api/v1/album/add").authenticated()
-                .requestMatchers("/api/v1/album/").authenticated()
+                .requestMatchers("/api/v1/album/albums").authenticated()
                 .requestMatchers("/api/v1/album/{album_id}/photos").authenticated()
                 .requestMatchers("/api/v1/album/albums/{albumId}/photos/{photoId}/downloadPhoto").authenticated()
                 .requestMatchers("/api/v1/album/albums/{albumId}/photos/{photoId}/downloadThumbnail").authenticated()
+                .requestMatchers("/api/v1/album/albums/{albumId}").authenticated()
                 );
         http.oauth2ResourceServer(r -> r.jwt(jwt -> {
         }));

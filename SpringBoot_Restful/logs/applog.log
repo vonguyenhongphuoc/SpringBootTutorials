@@ -117,3 +117,393 @@
 2024-05-19 14:26:57 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean650 - Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-05-19 14:26:57 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource350 - HikariPool-1 - Shutdown initiated...
 2024-05-19 14:26:57 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource352 - HikariPool-1 - Shutdown completed.
+2024-05-19 14:45:51 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 16932 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-05-19 14:45:51 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-05-19 14:45:51 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-05-19 14:45:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19 14:45:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate208 - Finished Spring Data repository scanning in 79 ms. Found 3 JPA repository interfaces.
+2024-05-19 14:45:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-05-19 14:45:54 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-05-19 14:45:54 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-19 14:45:54 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-05-19 14:45:54 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 2428 ms
+2024-05-19 14:45:54 [main] INFO  com.zaxxer.hikari.HikariDataSource110 - HikariPool-1 - Starting...
+2024-05-19 14:45:54 [main] INFO  com.zaxxer.hikari.pool.HikariPool565 - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/db user=ADMIN
+2024-05-19 14:45:54 [main] INFO  com.zaxxer.hikari.HikariDataSource123 - HikariPool-1 - Start completed.
+2024-05-19 14:45:54 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration88 - H2 console available at '/db-console'. Database available at 'jdbc:h2:file:./db/db'
+2024-05-19 14:45:54 [main] INFO  o.h.jpa.internal.util.LogHelper31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19 14:45:54 [main] INFO  org.hibernate.Version44 - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-19 14:45:55 [main] INFO  o.h.c.i.RegionFactoryInitiator50 - HHH000026: Second-level cache disabled
+2024-05-19 14:45:55 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19 14:45:55 [main] WARN  org.hibernate.orm.deprecation153 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-19 14:45:56 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19 14:45:56 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19 14:45:58 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-19 14:45:58 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2f53e07d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c3ad125, org.springframework.security.web.context.SecurityContextHolderFilter@6df0d030, org.springframework.security.web.header.HeaderWriterFilter@326d39fd, org.springframework.web.filter.CorsFilter@145ce025, org.springframework.security.web.authentication.logout.LogoutFilter@7d0e46dd, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@1c4a8c93, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73b71935, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d453075, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1deca369, org.springframework.security.web.session.SessionManagementFilter@4822d7a1, org.springframework.security.web.access.ExceptionTranslationFilter@6020cd42, org.springframework.security.web.access.intercept.AuthorizationFilter@773ad729]
+2024-05-19 14:45:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer241 - Tomcat started on port 8080 (http) with context path ''
+2024-05-19 14:45:58 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication56 - Started SpringRestDemoWithGradleApplication in 7.889 seconds (process running for 8.689)
+2024-05-19 14:46:29 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-19 14:46:29 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet532 - Initializing Servlet 'dispatcherServlet'
+2024-05-19 14:46:29 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet554 - Completed initialization in 3 ms
+2024-05-19 14:46:31 [http-nio-8080-exec-9] INFO  o.s.api.AbstractOpenApiResource390 - Init duration for springdoc-openapi is: 747 ms
+2024-05-19 14:57:08 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 19036 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-05-19 14:57:08 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-05-19 14:57:08 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-05-19 14:57:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19 14:57:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate208 - Finished Spring Data repository scanning in 98 ms. Found 3 JPA repository interfaces.
+2024-05-19 14:57:11 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-05-19 14:57:11 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-05-19 14:57:11 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-19 14:57:11 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-05-19 14:57:11 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 2888 ms
+2024-05-19 14:57:11 [main] INFO  com.zaxxer.hikari.HikariDataSource110 - HikariPool-1 - Starting...
+2024-05-19 14:57:12 [main] INFO  com.zaxxer.hikari.pool.HikariPool565 - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/db user=ADMIN
+2024-05-19 14:57:12 [main] INFO  com.zaxxer.hikari.HikariDataSource123 - HikariPool-1 - Start completed.
+2024-05-19 14:57:12 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration88 - H2 console available at '/db-console'. Database available at 'jdbc:h2:file:./db/db'
+2024-05-19 14:57:12 [main] INFO  o.h.jpa.internal.util.LogHelper31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19 14:57:12 [main] INFO  org.hibernate.Version44 - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-19 14:57:12 [main] INFO  o.h.c.i.RegionFactoryInitiator50 - HHH000026: Second-level cache disabled
+2024-05-19 14:57:12 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19 14:57:13 [main] WARN  org.hibernate.orm.deprecation153 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-19 14:57:14 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19 14:57:14 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19 14:57:15 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-19 14:57:15 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext632 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Injection of autowired dependencies failed
+2024-05-19 14:57:15 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19 14:57:15 [main] INFO  com.zaxxer.hikari.HikariDataSource350 - HikariPool-1 - Shutdown initiated...
+2024-05-19 14:57:15 [main] INFO  com.zaxxer.hikari.HikariDataSource352 - HikariPool-1 - Shutdown completed.
+2024-05-19 14:57:15 [main] INFO  o.a.catalina.core.StandardService173 - Stopping service [Tomcat]
+2024-05-19 14:57:15 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-19 14:57:15 [main] ERROR o.s.boot.SpringApplication851 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.devhp.SpringRestDemoWithGradle.SpringRestDemoWithGradleApplication.main(SpringRestDemoWithGradleApplication.java:19)
+Caused by: java.lang.RuntimeException: Could not postProcess org.springframework.security.config.annotation.web.builders.WebSecurity@64f1b2fb of type class org.springframework.security.config.annotation.web.builders.WebSecurity
+	at org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor.postProcess(AutowireBeanFactoryObjectPostProcessor.java:69)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration.setFilterChainProxySecurityConfigurer(WebSecurityConfiguration.java:148)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:853)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	... 17 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcHandlerMappingIntrospectorRequestTransformer': Cannot resolve reference to bean 'mvcHandlerMappingIntrospector' while setting constructor argument
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:682)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:225)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1323)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1284)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:486)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$1.getIfUnique(DefaultListableBeanFactory.java:438)
+	at org.springframework.security.config.annotation.web.builders.WebSecurity.setApplicationContext(WebSecurity.java:397)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.invokeAwareInterfaces(ApplicationContextAwareProcessor.java:110)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.postProcessBeforeInitialization(ApplicationContextAwareProcessor.java:85)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:412)
+	at org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor.postProcess(AutowireBeanFactoryObjectPostProcessor.java:65)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcHandlerMappingIntrospector' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'albumController' method 
+com.devhp.SpringRestDemoWithGradle.controller.AlbumController#albums(Authentication)
+to {GET [/api/v1/album/]}: There is already 'albumController' bean method
+com.devhp.SpringRestDemoWithGradle.controller.AlbumController#albumById(long, Authentication) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	... 47 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'albumController' method 
+com.devhp.SpringRestDemoWithGradle.controller.AlbumController#albums(Authentication)
+to {GET [/api/v1/album/]}: There is already 'albumController' bean method
+com.devhp.SpringRestDemoWithGradle.controller.AlbumController#albumById(long, Authentication) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:665)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1388)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:368)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.initHandlerMappings(HandlerMappingIntrospector.java:130)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.afterPropertiesSet(HandlerMappingIntrospector.java:118)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 54 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'albumController' method 
+com.devhp.SpringRestDemoWithGradle.controller.AlbumController#albums(Authentication)
+to {GET [/api/v1/album/]}: There is already 'albumController' bean method
+com.devhp.SpringRestDemoWithGradle.controller.AlbumController#albumById(long, Authentication) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:672)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:634)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:331)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:508)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:84)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:298)
+	at java.base/java.util.LinkedHashMap.forEach(Unknown Source)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:296)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:265)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:224)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:212)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:239)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 67 common frames omitted
+2024-05-19 14:59:32 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 3120 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-05-19 14:59:32 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-05-19 14:59:32 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-05-19 14:59:34 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19 14:59:34 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate208 - Finished Spring Data repository scanning in 79 ms. Found 3 JPA repository interfaces.
+2024-05-19 14:59:35 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-05-19 14:59:35 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-05-19 14:59:35 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-19 14:59:35 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-05-19 14:59:35 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 2446 ms
+2024-05-19 14:59:35 [main] INFO  com.zaxxer.hikari.HikariDataSource110 - HikariPool-1 - Starting...
+2024-05-19 14:59:35 [main] INFO  com.zaxxer.hikari.pool.HikariPool565 - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/db user=ADMIN
+2024-05-19 14:59:35 [main] INFO  com.zaxxer.hikari.HikariDataSource123 - HikariPool-1 - Start completed.
+2024-05-19 14:59:35 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration88 - H2 console available at '/db-console'. Database available at 'jdbc:h2:file:./db/db'
+2024-05-19 14:59:35 [main] INFO  o.h.jpa.internal.util.LogHelper31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19 14:59:36 [main] INFO  org.hibernate.Version44 - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-19 14:59:36 [main] INFO  o.h.c.i.RegionFactoryInitiator50 - HHH000026: Second-level cache disabled
+2024-05-19 14:59:36 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19 14:59:36 [main] WARN  org.hibernate.orm.deprecation153 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-19 14:59:37 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19 14:59:37 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19 14:59:39 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-19 14:59:39 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext632 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Injection of autowired dependencies failed
+2024-05-19 14:59:39 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean650 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19 14:59:39 [main] INFO  com.zaxxer.hikari.HikariDataSource350 - HikariPool-1 - Shutdown initiated...
+2024-05-19 14:59:39 [main] INFO  com.zaxxer.hikari.HikariDataSource352 - HikariPool-1 - Shutdown completed.
+2024-05-19 14:59:39 [main] INFO  o.a.catalina.core.StandardService173 - Stopping service [Tomcat]
+2024-05-19 14:59:39 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-19 14:59:39 [main] ERROR o.s.boot.SpringApplication851 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.devhp.SpringRestDemoWithGradle.SpringRestDemoWithGradleApplication.main(SpringRestDemoWithGradleApplication.java:19)
+Caused by: java.lang.RuntimeException: Could not postProcess org.springframework.security.config.annotation.web.builders.WebSecurity@7ec729be of type class org.springframework.security.config.annotation.web.builders.WebSecurity
+	at org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor.postProcess(AutowireBeanFactoryObjectPostProcessor.java:69)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration.setFilterChainProxySecurityConfigurer(WebSecurityConfiguration.java:148)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:853)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	... 17 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcHandlerMappingIntrospectorRequestTransformer': Cannot resolve reference to bean 'mvcHandlerMappingIntrospector' while setting constructor argument
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:682)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:225)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1323)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1284)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:486)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$1.getIfUnique(DefaultListableBeanFactory.java:438)
+	at org.springframework.security.config.annotation.web.builders.WebSecurity.setApplicationContext(WebSecurity.java:397)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.invokeAwareInterfaces(ApplicationContextAwareProcessor.java:110)
+	at org.springframework.context.support.ApplicationContextAwareProcessor.postProcessBeforeInitialization(ApplicationContextAwareProcessor.java:85)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:412)
+	at org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor.postProcess(AutowireBeanFactoryObjectPostProcessor.java:65)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcHandlerMappingIntrospector' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'albumController' method 
+com.devhp.SpringRestDemoWithGradle.controller.AlbumController#albums(Authentication)
+to {GET [/api/v1/album/]}: There is already 'albumController' bean method
+com.devhp.SpringRestDemoWithGradle.controller.AlbumController#albumById(long, Authentication) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	... 47 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'albumController' method 
+com.devhp.SpringRestDemoWithGradle.controller.AlbumController#albums(Authentication)
+to {GET [/api/v1/album/]}: There is already 'albumController' bean method
+com.devhp.SpringRestDemoWithGradle.controller.AlbumController#albumById(long, Authentication) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:665)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1388)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:368)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.initHandlerMappings(HandlerMappingIntrospector.java:130)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.afterPropertiesSet(HandlerMappingIntrospector.java:118)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 54 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'albumController' method 
+com.devhp.SpringRestDemoWithGradle.controller.AlbumController#albums(Authentication)
+to {GET [/api/v1/album/]}: There is already 'albumController' bean method
+com.devhp.SpringRestDemoWithGradle.controller.AlbumController#albumById(long, Authentication) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:672)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:634)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:331)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:508)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:84)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:298)
+	at java.base/java.util.LinkedHashMap.forEach(Unknown Source)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:296)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:265)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:224)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:212)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:239)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 67 common frames omitted
+2024-05-19 15:01:06 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 6296 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-05-19 15:01:06 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-05-19 15:01:06 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-05-19 15:01:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19 15:01:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate208 - Finished Spring Data repository scanning in 81 ms. Found 3 JPA repository interfaces.
+2024-05-19 15:01:08 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-05-19 15:01:08 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-05-19 15:01:08 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-19 15:01:09 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-05-19 15:01:09 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 2349 ms
+2024-05-19 15:01:09 [main] INFO  com.zaxxer.hikari.HikariDataSource110 - HikariPool-1 - Starting...
+2024-05-19 15:01:09 [main] INFO  com.zaxxer.hikari.pool.HikariPool565 - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/db user=ADMIN
+2024-05-19 15:01:09 [main] INFO  com.zaxxer.hikari.HikariDataSource123 - HikariPool-1 - Start completed.
+2024-05-19 15:01:09 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration88 - H2 console available at '/db-console'. Database available at 'jdbc:h2:file:./db/db'
+2024-05-19 15:01:09 [main] INFO  o.h.jpa.internal.util.LogHelper31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19 15:01:09 [main] INFO  org.hibernate.Version44 - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-19 15:01:09 [main] INFO  o.h.c.i.RegionFactoryInitiator50 - HHH000026: Second-level cache disabled
+2024-05-19 15:01:10 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19 15:01:10 [main] WARN  org.hibernate.orm.deprecation153 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-19 15:01:11 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19 15:01:11 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19 15:01:12 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-19 15:01:13 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5c3ad125, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@145ce025, org.springframework.security.web.context.SecurityContextHolderFilter@33319df0, org.springframework.security.web.header.HeaderWriterFilter@403f6c04, org.springframework.web.filter.CorsFilter@1deca369, org.springframework.security.web.authentication.logout.LogoutFilter@318353, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@6d3c80bf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d453075, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16df0ebd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d0ce8a1, org.springframework.security.web.session.SessionManagementFilter@6fa5fc67, org.springframework.security.web.access.ExceptionTranslationFilter@2b68c59b, org.springframework.security.web.access.intercept.AuthorizationFilter@20e8286a]
+2024-05-19 15:01:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer241 - Tomcat started on port 8080 (http) with context path ''
+2024-05-19 15:01:13 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication56 - Started SpringRestDemoWithGradleApplication in 7.879 seconds (process running for 8.591)
+2024-05-19 15:01:36 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-19 15:01:36 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet532 - Initializing Servlet 'dispatcherServlet'
+2024-05-19 15:01:36 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet554 - Completed initialization in 2 ms
+2024-05-19 15:01:38 [http-nio-8080-exec-9] INFO  o.s.api.AbstractOpenApiResource390 - Init duration for springdoc-openapi is: 688 ms
+2024-05-19 15:04:50 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 21028 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-05-19 15:04:50 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-05-19 15:04:50 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-05-19 15:04:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19 15:04:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate208 - Finished Spring Data repository scanning in 87 ms. Found 3 JPA repository interfaces.
+2024-05-19 15:04:53 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-05-19 15:04:53 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-05-19 15:04:53 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-19 15:04:53 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-05-19 15:04:53 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 2857 ms
+2024-05-19 15:04:53 [main] INFO  com.zaxxer.hikari.HikariDataSource110 - HikariPool-1 - Starting...
+2024-05-19 15:04:53 [main] INFO  com.zaxxer.hikari.pool.HikariPool565 - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/db user=ADMIN
+2024-05-19 15:04:53 [main] INFO  com.zaxxer.hikari.HikariDataSource123 - HikariPool-1 - Start completed.
+2024-05-19 15:04:53 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration88 - H2 console available at '/db-console'. Database available at 'jdbc:h2:file:./db/db'
+2024-05-19 15:04:54 [main] INFO  o.h.jpa.internal.util.LogHelper31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19 15:04:54 [main] INFO  org.hibernate.Version44 - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-19 15:04:54 [main] INFO  o.h.c.i.RegionFactoryInitiator50 - HHH000026: Second-level cache disabled
+2024-05-19 15:04:54 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19 15:04:54 [main] WARN  org.hibernate.orm.deprecation153 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-19 15:04:55 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19 15:04:55 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19 15:04:57 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-19 15:04:58 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@549b26d7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c9430c6, org.springframework.security.web.context.SecurityContextHolderFilter@628b1538, org.springframework.security.web.header.HeaderWriterFilter@12115c28, org.springframework.web.filter.CorsFilter@66978c15, org.springframework.security.web.authentication.logout.LogoutFilter@6557dcea, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@2d0ce8a1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58dd1d0c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@740530b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6c96dc5c, org.springframework.security.web.session.SessionManagementFilter@7d453075, org.springframework.security.web.access.ExceptionTranslationFilter@1043c493, org.springframework.security.web.access.intercept.AuthorizationFilter@63be4548]
+2024-05-19 15:04:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer241 - Tomcat started on port 8080 (http) with context path ''
+2024-05-19 15:04:58 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication56 - Started SpringRestDemoWithGradleApplication in 9.043 seconds (process running for 9.685)
+2024-05-19 15:05:00 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-19 15:05:00 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet532 - Initializing Servlet 'dispatcherServlet'
+2024-05-19 15:05:00 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet554 - Completed initialization in 1 ms
+2024-05-19 15:05:03 [http-nio-8080-exec-7] INFO  o.s.api.AbstractOpenApiResource390 - Init duration for springdoc-openapi is: 669 ms
+2024-05-19 15:06:37 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication50 - Starting SpringRestDemoWithGradleApplication using Java 17.0.6 with PID 15948 (D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful\bin\main started by PHUOC in D:\PHUOC\Documents\Study\Java_Backend\SpringBootTutorials\SpringBoot_Restful)
+2024-05-19 15:06:37 [main] DEBUG c.d.S.SpringRestDemoWithGradleApplication51 - Running with Spring Boot v3.2.4, Spring v6.1.5
+2024-05-19 15:06:37 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication654 - No active profile set, falling back to 1 default profile: "default"
+2024-05-19 15:06:38 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate139 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-19 15:06:38 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate208 - Finished Spring Data repository scanning in 75 ms. Found 3 JPA repository interfaces.
+2024-05-19 15:06:39 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer109 - Tomcat initialized with port 8080 (http)
+2024-05-19 15:06:39 [main] INFO  o.a.catalina.core.StandardService173 - Starting service [Tomcat]
+2024-05-19 15:06:39 [main] INFO  o.a.catalina.core.StandardEngine173 - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-19 15:06:39 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring embedded WebApplicationContext
+2024-05-19 15:06:39 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext296 - Root WebApplicationContext: initialization completed in 2305 ms
+2024-05-19 15:06:39 [main] INFO  com.zaxxer.hikari.HikariDataSource110 - HikariPool-1 - Starting...
+2024-05-19 15:06:40 [main] INFO  com.zaxxer.hikari.pool.HikariPool565 - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db/db user=ADMIN
+2024-05-19 15:06:40 [main] INFO  com.zaxxer.hikari.HikariDataSource123 - HikariPool-1 - Start completed.
+2024-05-19 15:06:40 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration88 - H2 console available at '/db-console'. Database available at 'jdbc:h2:file:./db/db'
+2024-05-19 15:06:40 [main] INFO  o.h.jpa.internal.util.LogHelper31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-19 15:06:40 [main] INFO  org.hibernate.Version44 - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-19 15:06:40 [main] INFO  o.h.c.i.RegionFactoryInitiator50 - HHH000026: Second-level cache disabled
+2024-05-19 15:06:41 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo87 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-19 15:06:41 [main] WARN  org.hibernate.orm.deprecation153 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-19 15:06:42 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-19 15:06:42 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean437 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-19 15:06:43 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration232 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-19 15:06:44 [main] INFO  o.s.s.web.DefaultSecurityFilterChain54 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@eb23b9c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@314407dd, org.springframework.security.web.context.SecurityContextHolderFilter@16448827, org.springframework.security.web.header.HeaderWriterFilter@33319df0, org.springframework.web.filter.CorsFilter@7f19430f, org.springframework.security.web.authentication.logout.LogoutFilter@4d408746, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@3ade99bb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6bab373c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@493ed8e6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5e89e527, org.springframework.security.web.session.SessionManagementFilter@74597c37, org.springframework.security.web.access.ExceptionTranslationFilter@17e323fd, org.springframework.security.web.access.intercept.AuthorizationFilter@2f53e07d]
+2024-05-19 15:06:44 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer241 - Tomcat started on port 8080 (http) with context path ''
+2024-05-19 15:06:44 [main] INFO  c.d.S.SpringRestDemoWithGradleApplication56 - Started SpringRestDemoWithGradleApplication in 7.848 seconds (process running for 8.554)
+2024-05-19 15:06:50 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-19 15:06:50 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet532 - Initializing Servlet 'dispatcherServlet'
+2024-05-19 15:06:50 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet554 - Completed initialization in 3 ms
+2024-05-19 15:06:53 [http-nio-8080-exec-7] INFO  o.s.api.AbstractOpenApiResource390 - Init duration for springdoc-openapi is: 725 ms

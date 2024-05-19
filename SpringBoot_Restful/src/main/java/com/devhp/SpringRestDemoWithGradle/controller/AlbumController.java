@@ -52,8 +52,6 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 
-
-
 @RestController
 @RequestMapping("/api/v1/album")
 @Tag(name = "Album controller", description = "Controller for album and photo management")
@@ -95,7 +93,7 @@ public class AlbumController {
         }
     }
 
-    @GetMapping(value = "/")
+    @GetMapping(value = "/albums")
     @SecurityRequirement(name = Constants.SECURITY_APP_NAME)
     public List<AlbumViewDTO> albums(Authentication authentication) {
         String email = authentication.getName();
@@ -103,17 +101,45 @@ public class AlbumController {
         Account account = optionalAccount.get();
         List<AlbumViewDTO> albums = new ArrayList<>();
         for (Album album : albumService.findByAccount_id(account.getId())) {
-          
+
             List<PhotoDTO> photos = new ArrayList<>();
-            for(Photo photo: photoService.findByAlbumId(album.getId())){
-                String link =  "albums/"+album.getId()+"/photos/"+photo.getId()+"/downloadPhoto";
-                photos.add(new PhotoDTO(photo.getId(), photo.getName(), photo.getDescription(), photo.getFileName(), link));
+            for (Photo photo : photoService.findByAlbumId(album.getId())) {
+                String link = "albums/" + album.getId() + "/photos/" + photo.getId() + "/downloadPhoto";
+                photos.add(new PhotoDTO(photo.getId(), photo.getName(), photo.getDescription(), photo.getFileName(),
+                        link));
             }
             albums.add(new AlbumViewDTO(album.getId(), album.getName(), album.getDescription(), photos));
 
-
         }
         return albums;
+    }
+
+    @GetMapping(value = "/albums/{albumId}")
+    @SecurityRequirement(name = Constants.SECURITY_APP_NAME)
+    public ResponseEntity<AlbumViewDTO> albumById(@PathVariable(name = "albumId") long albumId, Authentication authentication) {
+        String email = authentication.getName();
+        Optional<Account> optionalAccount = accountService.findByEmail(email);
+        Account account = optionalAccount.get();
+        Optional<Album> optionalAlbum = albumService.findById(albumId);
+        Album album;
+        if (optionalAlbum.isPresent()) {
+            album = optionalAlbum.get();
+        } else {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
+        }
+        if (account.getId() != album.getAccount().getId()) {
+            return ResponseEntity.status(HttpStatus.FORBIDDEN).body(null);
+        }
+
+        List<PhotoDTO> photos = new ArrayList<>();
+        for (Photo photo : photoService.findByAlbumId(album.getId())) {
+            String link = "albums/" + album.getId() + "/photos/" + photo.getId() + "/downloadPhoto";
+            photos.add(new PhotoDTO(photo.getId(), photo.getName(), photo.getDescription(), photo.getFileName(), link));
+        }
+
+        AlbumViewDTO albumViewDTO = new AlbumViewDTO(album.getId(), album.getName(), album.getDescription(), photos);
+
+        return ResponseEntity.ok(albumViewDTO);
     }
 
     @PostMapping(value = "/{album_id}/photos", consumes = { MediaType.MULTIPART_FORM_DATA_VALUE })
@@ -242,10 +268,8 @@ public class AlbumController {
     @GetMapping("albums/{albumId}/photos/{photoId}/downloadThumbnail")
     @SecurityRequirement(name = Constants.SECURITY_APP_NAME)
     public ResponseEntity<?> downloadThumbnail(@PathVariable(name = "albumId") long albumId,
-    @PathVariable(name = "photoId") long photoId, Authentication authentication) {
+            @PathVariable(name = "photoId") long photoId, Authentication authentication) {
         return downloadFile(albumId, photoId, THUMBNAIL_FOLDER_NAME, authentication);
     }
-    
-
 
 }
