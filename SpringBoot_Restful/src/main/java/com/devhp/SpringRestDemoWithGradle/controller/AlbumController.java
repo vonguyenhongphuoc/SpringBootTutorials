@@ -50,6 +50,8 @@ import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 @RestController
 @RequestMapping("/api/v1/album")
@@ -179,10 +181,8 @@ public class AlbumController {
 
     }
 
-    @GetMapping("albums/{albumId}/photos/{photoId}/downloadPhoto")
-    @SecurityRequirement(name = Constants.SECURITY_APP_NAME)
-    public ResponseEntity<?> downloadPhoto(@PathVariable(name = "albumId") long albumId,
-            @PathVariable(name = "photoId") long photoId, Authentication authentication) {
+    public ResponseEntity<?> downloadFile(long albumId, long photoId, String folderName,
+            Authentication authentication) {
         String email = authentication.getName();
         Optional<Account> optionalAccount = accountService.findByEmail(email);
 
@@ -199,28 +199,45 @@ public class AlbumController {
         }
 
         Optional<Photo> optionalPhoto = photoService.findById(photoId);
-        if(optionalPhoto.isPresent()){
+        if (optionalPhoto.isPresent()) {
             Photo photo = optionalPhoto.get();
             Resource resource = null;
             try {
-                resource = AppUtil.getFileAsResource(albumId, PHOTOS_FOLDER_NAME, photo.getOriginalFileName());
+                resource = AppUtil.getFileAsResource(albumId, folderName, photo.getOriginalFileName());
             } catch (IOException e) {
                 return ResponseEntity.internalServerError().build();
             }
 
-            if(resource == null){
+            if (resource == null) {
                 return new ResponseEntity<>("File not found", HttpStatus.NOT_FOUND);
             }
             String contentType = MediaType.APPLICATION_OCTET_STREAM_VALUE;
             String headerValue = "attachment; filename=\"" + photo.getOriginalFileName() + "\"";
 
-            return ResponseEntity.ok().contentType(MediaType.parseMediaType(contentType)).header(HttpHeaders.CONTENT_DISPOSITION,headerValue).body(resource);
-            
+            return ResponseEntity.ok().contentType(MediaType.parseMediaType(contentType))
+                    .header(HttpHeaders.CONTENT_DISPOSITION, headerValue).body(resource);
 
-        }else {
+        } else {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
         }
-       
     }
+
+    @GetMapping("albums/{albumId}/photos/{photoId}/downloadPhoto")
+    @SecurityRequirement(name = Constants.SECURITY_APP_NAME)
+    public ResponseEntity<?> downloadPhoto(@PathVariable(name = "albumId") long albumId,
+            @PathVariable(name = "photoId") long photoId, Authentication authentication) {
+
+        return downloadFile(albumId, photoId, PHOTOS_FOLDER_NAME, authentication);
+
+    }
+
+    @GetMapping("albums/{albumId}/photos/{photoId}/downloadThumbnail")
+    @SecurityRequirement(name = Constants.SECURITY_APP_NAME)
+    public ResponseEntity<?> downloadThumbnail(@PathVariable(name = "albumId") long albumId,
+    @PathVariable(name = "photoId") long photoId, Authentication authentication) {
+        return downloadFile(albumId, photoId, THUMBNAIL_FOLDER_NAME, authentication);
+    }
+    
+
 
 }
