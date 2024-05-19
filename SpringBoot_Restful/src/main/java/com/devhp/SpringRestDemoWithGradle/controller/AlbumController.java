@@ -2,6 +2,7 @@ package com.devhp.SpringRestDemoWithGradle.controller;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -16,6 +17,8 @@ import javax.imageio.ImageIO;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.Resource;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -125,8 +128,8 @@ public class AlbumController {
 
             Arrays.asList(files).stream().forEach(file -> {
                 String contentType = file.getContentType();
-                if (contentType.equals("image/png") || contentType.equals("image/jpg")
-                        || contentType.equals("image/jpeg")) {
+                if (contentType != null && (contentType.equals("image/png") || contentType.equals("image/jpg")
+                        || contentType.equals("image/jpeg"))) {
                     fileNamesWithSuccess.add(file.getOriginalFilename());
 
                     int length = 10;
@@ -149,7 +152,8 @@ public class AlbumController {
                         BufferedImage thumbImg = AppUtil.getThumbnail(file, THUMBNAIL_WIDTH);
                         File thumbnailLocation = new File(
                                 AppUtil.getPhotoUploadPath(final_photo_name, THUMBNAIL_FOLDER_NAME, albumId));
-                        ImageIO.write(thumbImg, file.getContentType().split("/")[1], thumbnailLocation);
+
+                        ImageIO.write(thumbImg, contentType.split("/")[1], thumbnailLocation);
 
                     } catch (Exception e) {
                         log.debug(AlbumError.PHOTO_UPLOAD_ERROR.toString() + ": " + e.getMessage());
@@ -173,6 +177,50 @@ public class AlbumController {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
         }
 
+    }
+
+    @GetMapping("albums/{albumId}/photos/{photoId}/downloadPhoto")
+    @SecurityRequirement(name = Constants.SECURITY_APP_NAME)
+    public ResponseEntity<?> downloadPhoto(@PathVariable(name = "albumId") long albumId,
+            @PathVariable(name = "photoId") long photoId, Authentication authentication) {
+        String email = authentication.getName();
+        Optional<Account> optionalAccount = accountService.findByEmail(email);
+
+        Optional<Album> optionalAlbum = albumService.findById(albumId);
+
+        if (optionalAlbum.isPresent() && optionalAccount.isPresent()) {
+            Account account = optionalAccount.get();
+            Album album = optionalAlbum.get();
+            if (account.getId() != album.getAccount().getId()) {
+                return ResponseEntity.status(HttpStatus.FORBIDDEN).body(null);
+            }
+        } else {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
+        }
+
+        Optional<Photo> optionalPhoto = photoService.findById(photoId);
+        if(optionalPhoto.isPresent()){
+            Photo photo = optionalPhoto.get();
+            Resource resource = null;
+            try {
+                resource = AppUtil.getFileAsResource(albumId, PHOTOS_FOLDER_NAME, photo.getOriginalFileName());
+            } catch (IOException e) {
+                return ResponseEntity.internalServerError().build();
+            }
+
+            if(resource == null){
+                return new ResponseEntity<>("File not found", HttpStatus.NOT_FOUND);
+            }
+            String contentType = MediaType.APPLICATION_OCTET_STREAM_VALUE;
+            String headerValue = "attachment; filename=\"" + photo.getOriginalFileName() + "\"";
+
+            return ResponseEntity.ok().contentType(MediaType.parseMediaType(contentType)).header(HttpHeaders.CONTENT_DISPOSITION,headerValue).body(resource);
+            
+
+        }else {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
+        }
+       
     }
 
 }

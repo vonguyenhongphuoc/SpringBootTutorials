@@ -84,7 +84,9 @@ public class SecurityConfig {
                 .requestMatchers("/auth/profile/delete").authenticated()
                 .requestMatchers("/api/v1/album/add").authenticated()
                 .requestMatchers("/api/v1/album/").authenticated()
-                .requestMatchers("/api/v1/album/{album_id}/photos").authenticated());
+                .requestMatchers("/api/v1/album/{album_id}/photos").authenticated()
+                .requestMatchers("/api/v1/album/albums/{albumId}/photos/{photoId}/downloadPhoto").authenticated()
+                );
         http.oauth2ResourceServer(r -> r.jwt(jwt -> {
         }));
         http.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
