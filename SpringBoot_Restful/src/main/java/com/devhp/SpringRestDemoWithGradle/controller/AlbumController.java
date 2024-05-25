@@ -26,6 +26,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestPart;
@@ -116,7 +117,8 @@ public class AlbumController {
 
     @GetMapping(value = "/albums/{albumId}")
     @SecurityRequirement(name = Constants.SECURITY_APP_NAME)
-    public ResponseEntity<AlbumViewDTO> albumById(@PathVariable(name = "albumId") long albumId, Authentication authentication) {
+    public ResponseEntity<AlbumViewDTO> albumById(@PathVariable(name = "albumId") long albumId,
+            Authentication authentication) {
         String email = authentication.getName();
         Optional<Account> optionalAccount = accountService.findByEmail(email);
         Account account = optionalAccount.get();
@@ -140,6 +142,48 @@ public class AlbumController {
         AlbumViewDTO albumViewDTO = new AlbumViewDTO(album.getId(), album.getName(), album.getDescription(), photos);
 
         return ResponseEntity.ok(albumViewDTO);
+    }
+
+    @PutMapping(value = "/albums/{albumID}/update", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    @SecurityRequirement(name = Constants.SECURITY_APP_NAME)
+    public ResponseEntity<AlbumViewDTO> updateAlbum(@Valid @RequestBody AlbumPayloadDTO albumPayloadDTO,
+            @PathVariable(name = "albumID") long albumID, Authentication authentication) {
+        try {
+            String email = authentication.getName();
+            Optional<Account> optionalAccount = accountService.findByEmail(email);
+            Account account = optionalAccount.get();
+
+            Optional<Album> optionalAlbum = albumService.findById(albumID);
+            Album album;
+            if (optionalAlbum.isPresent()) {
+                album = optionalAlbum.get();
+                if (account.getId() != album.getAccount().getId()) {
+                    return ResponseEntity.status(HttpStatus.FORBIDDEN).body(null);
+                }
+            } else {
+                return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
+            }
+
+            album.setName(albumPayloadDTO.getName());
+            album.setDescription(albumPayloadDTO.getDescription());
+            album = albumService.save(album);
+
+            List<PhotoDTO> photos = new ArrayList<>();
+            for (Photo photo : photoService.findByAlbumId(album.getId())) {
+                String link = "albums/" + album.getId() + "/photos/" + photo.getId() + "/downloadPhoto";
+                photos.add(new PhotoDTO(photo.getId(), photo.getName(), photo.getDescription(), photo.getFileName(),
+                        link));
+            }
+
+            AlbumViewDTO albumViewDTO = new AlbumViewDTO(album.getId(), album.getName(), album.getDescription(),
+                    photos);
+
+            return ResponseEntity.ok(albumViewDTO);
+        } catch (Exception e) {
+           log.debug(AlbumError.ADD_ALBUM_ERROR.toString() + ": " + e.getMessage());
+           return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
+        }
+
     }
 
     @PostMapping(value = "/{album_id}/photos", consumes = { MediaType.MULTIPART_FORM_DATA_VALUE })

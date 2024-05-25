@@ -4535,3 +4535,8 @@ Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:522)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
 	... 100 more
+2024-05-25 15:16:25.629566+07:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM PHOTO \000d\000a\000d\000a[*]SELECT * FROM ALBUM"; SQL statement:
+SELECT * FROM PHOTO 
+
+SELECT * FROM ALBUM [42000-224]
