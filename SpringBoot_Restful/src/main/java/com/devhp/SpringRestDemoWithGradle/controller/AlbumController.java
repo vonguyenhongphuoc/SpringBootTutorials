@@ -40,6 +40,8 @@ import com.devhp.SpringRestDemoWithGradle.model.Photo;
 import com.devhp.SpringRestDemoWithGradle.payload.album.AlbumPayloadDTO;
 import com.devhp.SpringRestDemoWithGradle.payload.album.AlbumViewDTO;
 import com.devhp.SpringRestDemoWithGradle.payload.album.PhotoDTO;
+import com.devhp.SpringRestDemoWithGradle.payload.album.PhotoPayloadDTO;
+import com.devhp.SpringRestDemoWithGradle.payload.album.PhotoViewDTO;
 import com.devhp.SpringRestDemoWithGradle.service.AccountService;
 import com.devhp.SpringRestDemoWithGradle.service.AlbumService;
 import com.devhp.SpringRestDemoWithGradle.service.PhotoService;
@@ -180,8 +182,48 @@ public class AlbumController {
 
             return ResponseEntity.ok(albumViewDTO);
         } catch (Exception e) {
-           log.debug(AlbumError.ADD_ALBUM_ERROR.toString() + ": " + e.getMessage());
-           return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
+            log.debug(AlbumError.ADD_ALBUM_ERROR.toString() + ": " + e.getMessage());
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
+        }
+
+    }
+
+    @PutMapping(value = "/albums/{albumID}/photos/{photoID}/update", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    @SecurityRequirement(name = Constants.SECURITY_APP_NAME)
+    public ResponseEntity<PhotoViewDTO> updatePhoto(@Valid @RequestBody PhotoPayloadDTO photoPayloadDTO,
+            @PathVariable(name = "albumID") long albumID, @PathVariable(name = "photoID") long photoID,
+            Authentication authentication) {
+        try {
+            String email = authentication.getName();
+            Optional<Account> optionalAccount = accountService.findByEmail(email);
+            Account account = optionalAccount.get();
+
+            Optional<Album> optionalAlbum = albumService.findById(albumID);
+            Album album;
+            if (optionalAlbum.isPresent()) {
+                album = optionalAlbum.get();
+                if (account.getId() != album.getAccount().getId()) {
+                    return ResponseEntity.status(HttpStatus.FORBIDDEN).body(null);
+                }
+            } else {
+                return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
+            }
+
+            Optional<Photo> optionalPhoto = photoService.findById(photoID);
+            if (optionalPhoto.isPresent()) {
+                Photo photo = optionalPhoto.get();
+                photo.setName(photoPayloadDTO.getName());
+                photo.setDescription(photoPayloadDTO.getDescription());
+                photoService.save(photo);
+                PhotoViewDTO photoViewDTO = new PhotoViewDTO(photo.getId(), photoPayloadDTO.getName(),
+                        photoPayloadDTO.getDescription());
+                return ResponseEntity.ok(photoViewDTO);
+            } else {
+                return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
+            }
+        } catch (Exception e) {
+            log.debug(AlbumError.ADD_ALBUM_ERROR.toString() + ": " + e.getMessage());
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
         }
 
     }

@@ -89,6 +89,7 @@ public class SecurityConfig {
                 .requestMatchers("/api/v1/album/albums/{albumId}/photos/{photoId}/downloadThumbnail").authenticated()
                 .requestMatchers("/api/v1/album/albums/{albumId}").authenticated()
                 .requestMatchers("/api/v1/album/albums/{album_id}/update").authenticated()
+                .requestMatchers("/api/v1/album/albums/{albumID}/photos/{photoID}/update").authenticated()
                 );
         http.oauth2ResourceServer(r -> r.jwt(jwt -> {
         }));
