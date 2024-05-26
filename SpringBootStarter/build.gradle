@@ -23,9 +23,13 @@ repositories {
 }
 
 dependencies {
+	// Stater includes the Restful API
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	// To Generate the Getter/Setter...
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
+	// Security
+	implementation 'org.springframework.boot:spring-boot-starter-security'
 
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
