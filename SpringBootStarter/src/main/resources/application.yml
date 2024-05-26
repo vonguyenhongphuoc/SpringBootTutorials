@@ -3,3 +3,9 @@
 #    user:
 #      name: devhp
 #      password: password123
+
+
+server:
+  port: 8888
+  servlet:
+    context-path: /devhp
