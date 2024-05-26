@@ -30,6 +30,9 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
 	// Security
 	implementation 'org.springframework.boot:spring-boot-starter-security'
+	// Database
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	runtimeOnly 'org.postgresql:postgresql'  // Current Version: 42.6.1
 
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
