@@ -10,3 +10,10 @@ CREATE TABLE authorities (
   authority VARCHAR(50) NOT NULL,
   CONSTRAINT fk_username FOREIGN KEY(username) REFERENCES users(username) ON DELETE CASCADE
 );
+
+CREATE TABLE customer (
+  id SERIAL PRIMARY KEY,
+  username VARCHAR(50) NOT NULL,
+  password VARCHAR(500) NOT NULL,
+  role varchar(50) NOT NULL
+);
