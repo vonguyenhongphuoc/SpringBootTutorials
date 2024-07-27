@@ -13,7 +13,10 @@ spring:
       ddl-auto: update        # Không nên dùng cấu hình này trong môi trường PRD.
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/first_db_devhp
-    username: postgres
-    password: P@ssw0rd
+    url: jdbc:postgresql://alpha.india.mkdb.sh:5432/gczxlfjc
+    username: stqzffyn
+    password: ffyfmajfmafrgwptxsxq
 
+
+
+#  psql postgresql://stqzffyn:ffyfmajfmafrgwptxsxq@alpha.india.mkdb.sh:5432/gczxlfjc
